@@ -8,17 +8,17 @@ $("body").css({
     'display':'block'
 })
 var swiper_text = [
-  {localAndTime: '2018/02/01 江苏苏州', text: '轮播图1'},
-  {localAndTime: '2018/11/01 广东广州', text: '轮播图2'},
-  {localAndTime: '2018/04/01 山东烟台', text: '轮播图3'},
-  {localAndTime: '2018/02/12 湖北武汉', text: '轮播图4'},
-  {localAndTime: '2018/04/01 中国上海', text: '轮播图5'},
+  {localAndTime: '2018/02 江苏苏州', text: '轮播图1'},
+  {localAndTime: '2018/11 广东广州', text: '轮播图2'},
+  {localAndTime: '2018/04 山东烟台', text: '轮播图3'},
+  {localAndTime: '2018/02 湖北武汉', text: '轮播图4'},
+  {localAndTime: '2018/04 中国上海', text: '轮播图5'},
 ]
 var mySwiper = new Swiper('.swiper-container',{
   pagination : ".pagination",
   paginationClickable : true,
   loop: true,
-  autoplay: 3000,
+  autoplay: 7000,
   onSlideChangeStart: function(swiper){
       $(swiper.visibleSlides).find('img').addClass('active').end().siblings().find('img').removeClass('active')
       // $(".swiper-slide:not('')").eq(swiper.activeLoopIndex).find('img').addClass('active').siblings().removeClass('active')

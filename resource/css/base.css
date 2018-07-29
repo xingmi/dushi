@@ -141,19 +141,27 @@ body{
 .sub_project li{
   padding-top: 40px;
   float: left;
-  width: 150px;
+  width: 190px;
   margin-right: 50px;
 }
+
 .sub_project li h4{
   color: #808080;
   font-size: 14px;
 }
 .sub_project li a{
-  width: 70px;
+  width: 90px;
   display: inline-block;
   margin-top: 20px;
   color: #a0a0a0;
 }
+.sub_project li.location{
+  width: 120px;
+}
+.sub_project li.location a{
+  width: 50px;
+}
+
 .sub_project li a:last-child{
   margin-bottom: 20px;
 }
@@ -178,7 +186,7 @@ body{
 .nav .nav_list li{
   float: left;
   font-size: 14px;
-  width: 80px;
+  margin-right: 45px;
   text-align: center;
   cursor: pointer;
 }
