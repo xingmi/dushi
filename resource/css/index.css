@@ -16,7 +16,7 @@ body{
   transition: 5s ease;
 }
 .home_slider .swiper-container div img.active{
-  transform: scale(1.1)
+  transform: scale(1)
 }
 .home_slider .pagination{
   z-index: 1;
