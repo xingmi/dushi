@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>首页</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/index.css">
+  <script type="text/javascript" src="/resource/javascript/jquery_1_7_2.js"></script>
+  <script type="text/javascript" src="/resource/javascript/home_swiper.min.js"></script>
+</head>
+<body>
+<div class="nav container">
+    <a href="/" class="logo">    
+    </a>
+    <ul class="nav_list">
+      <li><a href="/cn/index.html">首页</a></li>
+      <li><a href="javascript:void(0)" data-index="1">理念</a></li>
+      <li><a href="javascript:void(0)" data-index="2">项目</a></li>
+      <li><a href="javascript:void(0)" data-index="3">新闻/出版物</a></li>
+      <li><a href="javascript:void(0)" data-index="4">关于我们</a></li>
+    </ul>
+    <ol class="sub_nav single sub_nav_1">
+      <li>
+        <a href="">一体化设计</a>
+        <a href="">价值发掘者</a>
+        <a href="">高完成度</a>
+      </li>
+    </ol>
+    <ol class="sub_nav sub_project sub_nav_2 clear_fix">
+      <li>
+        <h4>地区</h4>
+        <a href="">华东</a>
+        <a href="">华北</a>
+        <a href="">华中</a>
+        <a href="">华南</a>
+        <a href="">西南</a>
+      </li>
+      <li>
+        <h4>类型</h4>
+        <a href="">商业+办公</a>
+        <a href="">住宅</a>
+        <a href="">酒店</a>
+        <a href="">旅游小镇</a>
+        <a href="">文化</a>
+        <a href="">城市更新</a>
+      </li>
+      <li>
+        <h4>服务</h4>
+        <a href="">设计总协调</a>
+        <a href="">室内</a>
+        <a href="">一体化设计</a>
+        <a href="">规划</a>
+        <a href="">建筑</a>
+      </li>
+      <li>
+        <h4>研究项目</h4>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </li>
+    </ol>
+    <ol class="sub_nav single sub_nav_3">
+      <li>
+        <a href="">新闻</a>
+        <a href="">出版物/文章</a>
+        <a href="">在网络媒体的宣传</a>
+      </li>
+    </ol>
+    <ol class="sub_nav single sub_nav_4">
+      <li>
+        <a href="">奖项</a>
+        <a href="">主要成员</a>
+        <a href="">工作机会</a>
+        <a href="">联系我们</a>
+        <a href="">管理结构</a>
+      </li>
+    </ol>
+</div>
+<div class="home_slider">
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
+        <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
+        <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
+        <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
+        <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="pagination">
+      <span class="swiper-pagination-switch"></span>
+      <span class="swiper-pagination-switch"></span>
+      <span class="swiper-pagination-switch"></span>
+    </div>
+  </div>
+  
+</div>
+
+<div class="home_footer container">
+    <span class="swiper_time"></span>
+    <span class="swiper_text"></span>
+</div>
+<script type="text/javascript">
+  $(".nav_list li a").hover(function(){
+    console.log('sub_nav_'+$(this).data('index'))
+    $('.sub_nav_'+$(this).data('index')).css('display','block').siblings('.sub_nav').css('display','none')
+  })
+  $(".sub_nav").mouseleave(function(){
+    $(".sub_nav").css('display','none')
+  })
+</script>
+<script type="text/javascript" src="/resource/javascript/index.js"></script>
+</body>
+</html>
