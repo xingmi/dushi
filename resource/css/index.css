@@ -14,6 +14,7 @@ body{
   width: 100%;
   transform: scale(1.4);
   transition: 5s ease;
+  // transform-origin: center center;
 }
 .home_slider .swiper-container div img.active{
   transform: scale(1)
