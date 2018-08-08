@@ -3,6 +3,9 @@
   overflow: hidden;
   position: relative;
 }
+.project_slider .swiper-slide img{
+  width: 100%;
+}
 
 .project_slider .pagination{
   z-index: 1;
@@ -59,9 +62,10 @@
   overflow: hidden;
 }
 .project_list li img{
-  transition: 3s ease;
+  transition: 1.5s ease;
   transform-origin:center center;
+  width: 100%;
 }
 .project_list li:hover img{
-  transform: scale(1.3)
+  transform: scale(1.2);
 }
