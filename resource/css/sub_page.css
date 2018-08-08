@@ -1,0 +1,44 @@
+.nav{
+  position: relative;
+}
+.nav .nav_list li a,
+.nav .nav_list li a.current{
+  color: #000000;
+}
+.sub_nav a,
+.sub_nav.single li a{
+  color: #000;
+  font-weight: bold;
+}
+
+.nav{
+  background: #FFF;
+}
+
+.nav ol{
+  display: none;
+}
+.nav .nav_list>li a{
+  color: #949393;
+}
+.nav .nav_list>li>ol{
+  display: block;
+}
+
+.nav .logo{
+  background: url('/resource/images/common/logo_black.png') no-repeat;
+}
+
+.sub_title{
+  width: 100%;
+  min-height: 90px;
+  background: #FFF;
+  border-top: 1px solid #b5b5b5;
+  padding-left: 50px;
+  box-sizing: border-box;
+  line-height: 90px;
+  font-size: 26px;
+  color: #000;
+  padding-right: 90px;
+  font-weight: bold;
+}

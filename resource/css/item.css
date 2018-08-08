@@ -1,0 +1,102 @@
+.sub_title{
+  line-height: 30px;
+}
+.sub_title .project_name{
+  margin-top: 15px;
+}
+.sub_title .change_module{
+  margin-top: 5px;
+  font-size: 12px; 
+}
+.sub_title .change_module span{
+  color: #929292;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.sub_title .change_module span:hover,
+.sub_title .change_module span.current{
+  color: #000;
+
+}
+
+.project_slider{
+  height: 840px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project_slider .pagination{
+  z-index: 1;
+  position: absolute;
+  bottom: 40px;
+  width: 132px;
+  left: 50%;
+  margin-left: -66px;
+  z-index: 100;
+}
+.project_slider .pagination span{
+  margin-left: 10px;
+  float: left;
+  display: block;
+  border:1px solid #FFF;
+  // background: ;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  cursor: pointer;
+}
+.project_slider .pagination span.swiper-visible-switch{
+  background: #FFF;
+}
+.project_slider .swiper_text{
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  padding-left: 50px;
+  display: block;
+  color: #FFF;
+  font-size: 20px;
+  z-index: 1;
+  font-weight: lighter;
+}
+
+.project_slider .design{
+  display: none
+}
+.project_intro{
+  padding: 50px;
+}
+.project_intro .left_module{
+  float: left;
+  padding-right: 500px;
+  box-sizing: border-box;
+}
+.project_intro .left_module p{
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: justify;
+}
+.project_intro .right_module{
+  width: 290px;
+  float: right;
+  margin-left: -290px;
+}
+.project_intro .right_module dl{
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.project_intro .right_module dt{
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #000;
+}
+.project_intro .right_module dd{
+  line-height: 24px;
+}
+.project_intro .right_module dd b{
+  color: #000;
+}

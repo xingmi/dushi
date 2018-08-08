@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>首页</title>
+  <title>项目</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css">
-  <link rel="stylesheet" type="text/css" href="/resource/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/project.css">
   <script type="text/javascript" src="/resource/javascript/jquery_1_7_2.js"></script>
   <script type="text/javascript" src="/resource/javascript/home_swiper.min.js"></script>
 </head>
@@ -80,26 +81,45 @@
       </li>
     </ol>
 </div>
-<div class="home_slider">
-   <div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
+<div class="sub_title">
+  华北
+</div> 
+<div class="project">
+  <div class="project_slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
+      </div>
     </div>
-  </div>
-  <div class="container">
     <div class="pagination">
     </div>
+    <span class="swiper_text"></span>
   </div>
+  <ul class="project_list clear_fix">
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/2.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/3.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/4.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
+  </ul>
+</div>
+<div class="common_footer">
+    <h5>上海都设营造建筑设计事务所有限公司</h5>
+    <h6>沪备案号FDRE3GS</h6>
 </div>
 
-<div class="home_footer container">
-    <span class="swiper_time"></span>
-    <span class="swiper_text"></span>
-</div>
 <script type="text/javascript">
   $(".nav_list li a").hover(function(){
     console.log('sub_nav_'+$(this).data('index'))
@@ -109,6 +129,6 @@
     $(".sub_nav").css('display','none')
   })
 </script>
-<script type="text/javascript" src="/resource/javascript/index.js"></script>
+<script type="text/javascript" src="/resource/javascript/project.js"></script>
 </body>
 </html>

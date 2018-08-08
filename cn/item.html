@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>首页</title>
+  <title>项目</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css">
-  <link rel="stylesheet" type="text/css" href="/resource/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css">
+  <link rel="stylesheet" type="text/css" href="/resource/css/item.css">
   <script type="text/javascript" src="/resource/javascript/jquery_1_7_2.js"></script>
   <script type="text/javascript" src="/resource/javascript/home_swiper.min.js"></script>
 </head>
@@ -80,26 +81,68 @@
       </li>
     </ol>
 </div>
-<div class="home_slider">
-   <div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
-    </div>
+<div class="sub_title">
+  <div class="project_name">荷兰精品酒店</div>
+  <div class="change_module">
+    <span class="photo_btn current">照片</span>
+    <span class="design_btn">设计</span>
   </div>
-  <div class="container">
+</div> 
+<div class="project">
+  <div class="project_slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href=""><img src="/resource/images/index/1.jpg" class="photo"><img src="/resource/images/item/1.jpg" class="design"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="/resource/images/index/2.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a>
+          </div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
+          <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
+      </div>
+    </div>
     <div class="pagination">
     </div>
+    <span class="swiper_text"></span>
+  </div>
+</div>
+<div class="project_intro clear_fix">
+  <div class="left_module">
+    <p>该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览空间等配
+套设施该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览，
+空间等配套设施 套设施该总体规划提倡学习场所采用开放的内部结构，并增加
+咖啡厅和展览，空间等配套设施套设施该总体规划提倡学习场所采用开放的内
+部结构，并增加咖啡厅和展览，空间等配套设施。</p>
+<p>该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览空间等配
+套设施该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览，
+空间等配套设施 套设施该总体规划提倡学习场所采用开放的内部结构，并增加
+咖啡厅和展览，空间等配套设施套设施该总体规划提倡学习场所采用开放的内
+部结构，并增加咖啡厅和展览，空间等配套设施。</p>
+  </div>
+  <div class="right_module">
+    <dl>
+      <dt>项目概况</dt>
+      <dd>地点：<b>江苏江阴</b></dd>
+      <dd>竣工时间：<b>2013</b></dd>
+      <dd>用地面积：<b>1000㎡</b></dd>
+      <dd>总建筑面积：<b>1000㎡</b></dd>
+      <dd>类型：<b>酒店</b></dd>
+      <dd>服务：<b>一体化设计</b></dd>
+    </dl>
+    <dl>
+      <dt>奖项</dt>
+      <dd><b>2015年 上海市建筑优秀奖</b></dd>
+    </dl>
   </div>
 </div>
 
-<div class="home_footer container">
-    <span class="swiper_time"></span>
-    <span class="swiper_text"></span>
+<div class="common_footer">
+    <h5>上海都设营造建筑设计事务所有限公司</h5>
+    <h6>沪备案号FDRE3GS</h6>
 </div>
+
 <script type="text/javascript">
   $(".nav_list li a").hover(function(){
     console.log('sub_nav_'+$(this).data('index'))
@@ -109,6 +152,6 @@
     $(".sub_nav").css('display','none')
   })
 </script>
-<script type="text/javascript" src="/resource/javascript/index.js"></script>
+<script type="text/javascript" src="/resource/javascript/item.js"></script>
 </body>
 </html>

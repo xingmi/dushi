@@ -31,3 +31,22 @@ var mySwiper = new Swiper('.swiper-container',{
       $(".swiper-slide").eq(1).find('img').addClass('active')
   }
 });  
+
+
+$(".sub_project a").on('click',function(e){
+  window.location.href = 'project.html?type=' + encodeURIComponent($(this).html())
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+

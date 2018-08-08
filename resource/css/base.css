@@ -253,3 +253,18 @@ body{
 .footer .contact_us_link a.wechat{
   background:url('/resource/images/common/wechat.png') no-repeat;
 }
+.common_footer{
+  margin-top: 5px;
+  background: #333333;
+  height: 102px;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+  color: #bdbdbd;
+}
+.common_footer h5{
+  margin-top: 25px
+}
+.common_footer h6{
+  margin-top: 15px;
+}
