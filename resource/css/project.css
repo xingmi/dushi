@@ -61,6 +61,37 @@
   width: 100%;
   overflow: hidden;
 }
+.project_list li div a{
+  display: block;
+  position: relative;
+}
+.project_list li div a .project_intro{
+  // background: #000;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1)); /* 标准的语法（必须放在最后*/
+}
+.project_list li div a .project_intro span{
+  display: block;
+}
+
+.project_list li div a .project_intro .project_title{
+  color: #FFF;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.project_list li div a .project_intro .project_location{
+  color: #dfdfdf;
+  font-size: 12px;
+}
 .project_list li img{
   transition: 1.5s ease;
   transform-origin:center center;
@@ -68,4 +99,7 @@
 }
 .project_list li:hover img{
   transform: scale(1.2);
+}
+.project_list li:hover  div a .project_intro{
+  display: block;
 }
