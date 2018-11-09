@@ -17,7 +17,7 @@ body{
   // transform-origin: center center;
 }
 .home_slider .swiper-container div img.active{
-  transform: scale(1)
+  transform: scale(1.2)
 }
 .home_slider .pagination{
   z-index: 1;

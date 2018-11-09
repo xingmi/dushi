@@ -1,29 +1,18 @@
 var projectId = decodeURIComponent($.getUrlParam('projectId'))
 
-$(".change_module span").on('click',function(){
-  $(this).addClass('current').siblings().removeClass('current')
-  if($(this).hasClass('design_btn')){
-    $('.swiper-slide').find('.design').css({
-      'display':'block'
-    }).siblings().css({
-      'display':'none'
-    })
-  }else{
-     $('.swiper-slide').find('.photo').css({
-      'display':'block'
-    }).siblings().css({
-      'display':'none'
-    })
-  }
+var ww = $(window).width();
+var hh = parseInt(ww*0.57)
+$(".project_slider,.swiper-container").css({
+  'height': hh + 'px'
 })
 
-var swiper_text = [
-  {text: '中国北京酒店'},
-  {text: '四川成都酒店'},
-  {text: '山东烟台酒店'},
-  {text: '湖北武汉酒店'},
-  {text: '中国上海酒店'},
-]
+$(window).resize(function(){
+  var ww = $(window).width();
+  var hh = parseInt(ww*0.57)
+  $(".project_slider,.swiper-container").css({
+    'height': hh + 'px'
+  })
+})
 
 
 var header = require('../components/Header.vue') 

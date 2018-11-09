@@ -1,5 +1,5 @@
 .project_slider{
-  height: 680px;
+  // height: 680px;
   overflow: hidden;
   position: relative;
 }
@@ -101,11 +101,11 @@
   margin-left: -40%;
 }
 .project_list li:hover img{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .project_list li:hover  div a .project_intro{
   display: block;
 }
 .swiper-container{
-  height: 680px;
+  // height: 680px;
 }

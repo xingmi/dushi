@@ -1,5 +1,5 @@
 .swiper-slide img{
-  height: 100%;
+  width: 100%;
 }
 .sub_title{
   line-height: 30px;
@@ -23,7 +23,7 @@
 }
 
 .project_slider{
-  height: 840px;
+  // height: 840px;
   overflow: hidden;
   position: relative;
 }
@@ -104,5 +104,5 @@
   color: #000;
 }
 .swiper-container{
-  height: 840px;
+  // height: 840px;
 }
