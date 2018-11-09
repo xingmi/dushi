@@ -95,6 +95,9 @@ input, select {
     vertical-align:middle;
 }
 
+[v-cloak] {
+  display: none;
+}
 h1,h2,h3,h4,h5,h6{
   font-size: 12px;
 }
@@ -154,6 +157,9 @@ body{
   display: inline-block;
   margin-top: 20px;
   color: #a0a0a0;
+}
+.sub_project li a.current{
+  color: #000;
 }
 .sub_project li.location{
   width: 120px;

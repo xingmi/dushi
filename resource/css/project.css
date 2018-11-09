@@ -64,6 +64,7 @@
 .project_list li div a{
   display: block;
   position: relative;
+  height: 100%;
 }
 .project_list li div a .project_intro{
   // background: #000;
@@ -95,11 +96,16 @@
 .project_list li img{
   transition: 1.5s ease;
   transform-origin:center center;
-  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-left: -40%;
 }
 .project_list li:hover img{
   transform: scale(1.2);
 }
 .project_list li:hover  div a .project_intro{
   display: block;
+}
+.swiper-container{
+  height: 680px;
 }

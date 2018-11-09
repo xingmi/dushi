@@ -1,5 +1,5 @@
 .swiper-slide img{
-  width: 100%;
+  height: 100%;
 }
 .sub_title{
   line-height: 30px;
@@ -102,4 +102,7 @@
 }
 .project_intro .right_module dd b{
   color: #000;
+}
+.swiper-container{
+  height: 840px;
 }

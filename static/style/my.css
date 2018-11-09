@@ -1,0 +1,157 @@
+.my{
+  background: #eeeeee;
+  font-size: 16px;
+}
+.user_info{
+  height: 150px;
+  background: url(/static/images/my.jpg) no-repeat;
+}
+.user_info img{
+  width: 80px;
+  height: 80px;
+  margin-top: 35px;
+  margin-left: 40px;
+  float: left;
+  border-radius: 50%;
+}
+.user_info span{
+  float: left;
+  margin-top: 65px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.user_data{
+  margin-top: 20px;
+}
+.user_data li{
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  margin-top: 10px;
+  background-color: #FFF;
+  padding: 0 25px 0 10px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.user_data li.first img{
+  margin-top: 16px;
+}
+.user_data li img{
+  width: 20px;
+  margin-top: 12px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.user_data li a{
+  display: block;
+  height: 100%;
+}
+.user_data li span{
+  float: right;
+}
+.user_data li span em{
+  color: red;
+  margin-right: 2px;
+  display: inline-block;
+  width: 20px;
+}
+.user_data li span em.amount{
+  width: auto;
+}
+.user_data li span i.arrow{
+  position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+}
+.user_data li i.arrow::after{
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 11px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    box-sizing: border-box;
+}
+.user_data .qrcode img{
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.protocol{
+  padding-bottom: 20px;
+  text-align: center;
+}
+.protocol span{
+  color: #fe704c;
+  font-size: 14px;
+}
+.mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background: rgba(0,0,0,.9);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: left;
+  line-height: 18px;
+}
+.mask h2{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.mask h3{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.fadeIn{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.animated{
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+.mask1,
+.mask2{
+  display: none;
+}

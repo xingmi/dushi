@@ -7,151 +7,77 @@
   <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/item.css">
-  <script type="text/javascript" src="/resource/javascript/jquery_1_7_2.js"></script>
-  <script type="text/javascript" src="/resource/javascript/home_swiper.min.js"></script>
+  <script type="text/javascript" src="/resource/data/data.js"></script>
+  <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
+  <script type="text/javascript" src="/res/lib/home_swiper.min.js"></script>
 </head>
 <body>
-<div class="nav container">
-    <a href="/" class="logo">    
-    </a>
-    <ul class="nav_list">
-      <li><a href="/cn/index.html">首页</a></li>
-      <li><a href="javascript:void(0)" data-index="1">理念</a></li>
-      <li><a href="javascript:void(0)" data-index="2">项目</a></li>
-      <li><a href="javascript:void(0)" data-index="3">新闻/出版物</a></li>
-      <li><a href="javascript:void(0)" data-index="4">关于我们</a></li>
-    </ul>
-    <ol class="sub_nav single sub_nav_1">
-      <li>
-        <a href="">一体化设计</a>
-        <a href="">价值发掘者</a>
-        <a href="">高完成度</a>
-      </li>
-    </ol>
-    <ol class="sub_nav sub_project sub_nav_2 clear_fix">
-      <li class="location">
-        <h4>地区</h4>
-        <a href="javascript:void(0)">华东</a>
-        <a href="javascript:void(0)">华北</a>
-        <a href="javascript:void(0)">华中</a>
-        <a href="javascript:void(0)">华南</a>
-        <a href="javascript:void(0)">西南</a>
-      </li>
-      <li>
-        <h4>类型</h4>
-        <a href="javascript:void(0)">商业+办公</a>
-        <a href="javascript:void(0)">住宅</a>
-        <a href="javascript:void(0)">酒店</a>
-        <a href="javascript:void(0)">旅游小镇</a>
-        <a href="javascript:void(0)">文化</a>
-        <a href="javascript:void(0)">城市更新</a>
-      </li>
-      <li>
-        <h4>服务</h4>
-        <a href="javascript:void(0)">设计总协调</a>
-        <a href="javascript:void(0)">室内</a>
-        <a href="javascript:void(0)">一体化设计</a>
-        <a href="javascript:void(0)">规划</a>
-        <a href="javascript:void(0)">建筑</a>
-      </li>
-      <li>
-        <h4>研究项目</h4>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-      </li>
-    </ol>
-    <ol class="sub_nav single sub_nav_3">
-      <li>
-        <a href="">新闻</a>
-        <a href="">出版物/文章</a>
-        <a href="">在网络媒体的宣传</a>
-      </li>
-    </ol>
-    <ol class="sub_nav single sub_nav_4">
-      <li>
-        <a href="">奖项</a>
-        <a href="">主要成员</a>
-        <a href="">工作机会</a>
-        <a href="">联系我们</a>
-        <a href="">管理结构</a>
-      </li>
-    </ol>
-</div>
-<div class="sub_title">
-  <div class="project_name">荷兰精品酒店</div>
-  <div class="change_module">
-    <span class="photo_btn current">照片</span>
-    <span class="design_btn">设计</span>
-  </div>
-</div> 
-<div class="project">
-  <div class="project_slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href=""><img src="/resource/images/index/1.jpg" class="photo"><img src="/resource/images/item/1.jpg" class="design"></a>
+<div id="app" v-cloak>
+  <du-header></du-header>
+  <div>
+    <div class="sub_title">
+      <div class="project_name">{{projectItem.name}}</div>
+      <div class="change_module">
+        <span :class="{current: isPhoto, 'photo_btn': true}" @click="isPhoto = !isPhoto">照片</span>
+        <span :class="{current: !isPhoto, 'design_btn': true}" @click="isPhoto = !isPhoto" v-if="projectItem.design > 0">设计</span>
+      </div>
+    </div> 
+    <div class="project">
+
+      <div class="project_slider" v-show="isPhoto">
+        <div class="swiper-container photos_swiper_container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="item in projectItem.photos">
+                <img :src="'/resource/images/project/' + projectItem.id + projectItem.name +'/照片/'+item+'.jpg'">
+              </div>
           </div>
-          <div class="swiper-slide">
-            <a href=""><img src="/resource/images/index/2.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a>
+        </div>
+        <div class="pagination photos_pagination" v-show="projectItem.photos > 1">
+        </div>
+      </div>
+
+      <div class="project_slider" v-show="!isPhoto">
+        <div class="swiper-container design_swiper_container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="item in projectItem.design">
+                <img :src="'/resource/images/project/' + projectItem.id + projectItem.name +'/设计/'+item+'.jpg'">
+              </div>
           </div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"  class="photo"><img src="/resource/images/item/1.jpg" class="design"></a></div>
+        </div>
+        <div class="pagination design_pagination" v-show="projectItem.design > 1">
+        </div>
+      </div>
+
+    </div>
+    <div class="project_intro clear_fix">
+      <div class="left_module">
+        <p v-for="intro in projectItem.intros">{{intro}}</p>
+      </div>
+      <div class="right_module">
+        <dl>
+          <dt>项目概况</dt>
+          <dd v-if="projectItem.address">地点：<b>{{projectItem.address}}</b></dd>
+          <dd v-if="projectItem.startTime">设计时间：<b>{{projectItem.startTime}}年</b></dd>
+          <dd v-if="projectItem.endTime">竣工时间：<b>{{projectItem.endTime}}</b></dd>
+          <dd v-if="projectItem.area">用地面积：<b>{{projectItem.area}}</b></dd>
+          <dd v-if="projectItem.totalArea">总建筑面积：<b>{{projectItem.totalArea}}</b></dd>
+          <dd v-if="projectItem.type">类型：<b>{{projectItem.type}}</b></dd>
+          <dd v-if="projectItem.service">服务：<b>{{projectItem.service}}</b></dd>
+        </dl>
+        <dl v-show="projectItem.awards.length">
+          <dt>奖项</dt>
+          <dd v-for="award in projectItem.awards "><b>{{award}}</b></dd>
+        </dl>
       </div>
     </div>
-    <div class="pagination">
-    </div>
-    <span class="swiper_text"></span>
   </div>
-</div>
-<div class="project_intro clear_fix">
-  <div class="left_module">
-    <p>该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览空间等配
-套设施该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览，
-空间等配套设施 套设施该总体规划提倡学习场所采用开放的内部结构，并增加
-咖啡厅和展览，空间等配套设施套设施该总体规划提倡学习场所采用开放的内
-部结构，并增加咖啡厅和展览，空间等配套设施。</p>
-<p>该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览空间等配
-套设施该总体规划提倡学习场所采用开放的内部结构，并增加咖啡厅和展览，
-空间等配套设施 套设施该总体规划提倡学习场所采用开放的内部结构，并增加
-咖啡厅和展览，空间等配套设施套设施该总体规划提倡学习场所采用开放的内
-部结构，并增加咖啡厅和展览，空间等配套设施。</p>
-  </div>
-  <div class="right_module">
-    <dl>
-      <dt>项目概况</dt>
-      <dd>地点：<b>江苏江阴</b></dd>
-      <dd>竣工时间：<b>2013</b></dd>
-      <dd>用地面积：<b>1000㎡</b></dd>
-      <dd>总建筑面积：<b>1000㎡</b></dd>
-      <dd>类型：<b>酒店</b></dd>
-      <dd>服务：<b>一体化设计</b></dd>
-    </dl>
-    <dl>
-      <dt>奖项</dt>
-      <dd><b>2015年 上海市建筑优秀奖</b></dd>
-    </dl>
+  <div class="common_footer">
+      <h5>上海都设营造建筑设计事务所有限公司</h5>
+      <h6>沪备案号FDRE3GS</h6>
   </div>
 </div>
 
-<div class="common_footer">
-    <h5>上海都设营造建筑设计事务所有限公司</h5>
-    <h6>沪备案号FDRE3GS</h6>
-</div>
-
-<script type="text/javascript">
-  $(".nav_list li a").hover(function(){
-    console.log('sub_nav_'+$(this).data('index'))
-    $('.sub_nav_'+$(this).data('index')).css('display','block').siblings('.sub_nav').css('display','none')
-  })
-  $(".sub_nav").mouseleave(function(){
-    $(".sub_nav").css('display','none')
-  })
-</script>
-<script type="text/javascript" src="/resource/javascript/item.js"></script>
+<script src="/res/lib/vue.js"></script>
+<script type="text/javascript" src="/dist/item.js?v=11111"></script>
 </body>
 </html>

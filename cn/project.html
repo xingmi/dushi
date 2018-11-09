@@ -7,168 +7,51 @@
   <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css">
   <link rel="stylesheet" type="text/css" href="/resource/css/project.css">
-  <script type="text/javascript" src="/resource/javascript/jquery_1_7_2.js"></script>
-  <script type="text/javascript" src="/resource/javascript/home_swiper.min.js"></script>
+  <script type="text/javascript" src="/resource/data/data.js"></script>
+  <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
+  <script type="text/javascript" src="/res/lib/home_swiper.min.js"></script>
 </head>
 <body>
-<div class="nav container">
-    <a href="/" class="logo">    
-    </a>
-    <ul class="nav_list">
-      <li><a href="/cn/index.html">首页</a></li>
-      <li><a href="javascript:void(0)" data-index="1">理念</a></li>
-      <li><a href="javascript:void(0)" data-index="2">项目</a></li>
-      <li><a href="javascript:void(0)" data-index="3">新闻/出版物</a></li>
-      <li><a href="javascript:void(0)" data-index="4">关于我们</a></li>
-    </ul>
-    <ol class="sub_nav single sub_nav_1">
-      <li>
-        <a href="">一体化设计</a>
-        <a href="">价值发掘者</a>
-        <a href="">高完成度</a>
-      </li>
-    </ol>
-    <ol class="sub_nav sub_project sub_nav_2 clear_fix">
-      <li class="location">
-        <h4>地区</h4>
-        <a href="javascript:void(0)">华东</a>
-        <a href="javascript:void(0)">华北</a>
-        <a href="javascript:void(0)">华中</a>
-        <a href="javascript:void(0)">华南</a>
-        <a href="javascript:void(0)">西南</a>
-      </li>
-      <li>
-        <h4>类型</h4>
-        <a href="javascript:void(0)">商业+办公</a>
-        <a href="javascript:void(0)">住宅</a>
-        <a href="javascript:void(0)">酒店</a>
-        <a href="javascript:void(0)">旅游小镇</a>
-        <a href="javascript:void(0)">文化</a>
-        <a href="javascript:void(0)">城市更新</a>
-      </li>
-      <li>
-        <h4>服务</h4>
-        <a href="javascript:void(0)">设计总协调</a>
-        <a href="javascript:void(0)">室内</a>
-        <a href="javascript:void(0)">一体化设计</a>
-        <a href="javascript:void(0)">规划</a>
-        <a href="javascript:void(0)">建筑</a>
-      </li>
-      <li>
-        <h4>研究项目</h4>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-        <a href="javascript:void(0)"></a>
-      </li>
-    </ol>
-    <ol class="sub_nav single sub_nav_3">
-      <li>
-        <a href="">新闻</a>
-        <a href="">出版物/文章</a>
-        <a href="">在网络媒体的宣传</a>
-      </li>
-    </ol>
-    <ol class="sub_nav single sub_nav_4">
-      <li>
-        <a href="">奖项</a>
-        <a href="">主要成员</a>
-        <a href="">工作机会</a>
-        <a href="">联系我们</a>
-        <a href="">管理结构</a>
-      </li>
-    </ol>
-</div>
-<div class="sub_title">
-  华北
-</div> 
-<div class="project">
-  <div class="project_slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
-          <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
+<div id="app" v-cloak>
+  <du-header></du-header>
+  <div class="sub_title">
+    华北
+  </div> 
+  <div class="project">
+    <div class="project_slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="item in scrollItemData">
+              <a :href="'item.html?projectId=' + item.id">
+                <img :src="'/resource/images/project/' + item.id + item.name +'/照片/1.jpg'">
+              </a>
+            </div>
+        </div>
       </div>
+      <div class="pagination" v-show="scrollItemData.length > 1">
+      </div>
+      <span class="swiper_text"></span>
     </div>
-    <div class="pagination">
-    </div>
-    <span class="swiper_text"></span>
+    <ul class="project_list clear_fix">
+        <li v-for="item in itemData">
+          <div>
+            <a :href="'item.html?projectId=' + item.id">
+              <img :src="'/resource/images/project/' + item.id + item.name +'/照片/1.jpg'">
+              <span class="project_intro">
+                <span class="project_title">{{item.name}}</span>
+                <span class="project_location">{{item.address}}</span>
+              </span>
+            </a>
+          </div>
+        </li>
+    </ul>
   </div>
-  <ul class="project_list clear_fix">
-      <li>
-        <div>
-          <a href="item.html">
-            <img src="/resource/images/project/1.jpg">
-            <span class="project_intro">
-              <span class="project_title">嘉禾酒店</span>
-              <span class="project_location">中国 上海</span>
-            </span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="item.html">
-            <img src="/resource/images/project/2.jpg">
-            <span class="project_intro">
-              <span class="project_title">嘉禾酒店</span>
-              <span class="project_location">中国 江苏</span>
-            </span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="item.html">
-            <img src="/resource/images/project/3.jpg">
-            <span class="project_intro">
-              <span class="project_title">嘉禾酒店</span>
-              <span class="project_location">中国 广东</span>
-            </span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="item.html">
-            <img src="/resource/images/project/4.jpg">
-            <span class="project_intro">
-              <span class="project_title">嘉禾酒店</span>
-              <span class="project_location">中国 北京</span>
-            </span>
-          </a>
-        </div>
-      </li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-      <li><div><a href="item.html"><img src="/resource/images/project/1.jpg"></a></div></li>
-  </ul>
+  <div class="common_footer">
+      <h5>上海都设营造建筑设计事务所有限公司</h5>
+      <h6>沪备案号FDRE3GS</h6>
+  </div>
 </div>
-<div class="common_footer">
-    <h5>上海都设营造建筑设计事务所有限公司</h5>
-    <h6>沪备案号FDRE3GS</h6>
-</div>
-
-<script type="text/javascript">
-  $(".nav_list li a").hover(function(){
-    console.log('sub_nav_'+$(this).data('index'))
-    $('.sub_nav_'+$(this).data('index')).css('display','block').siblings('.sub_nav').css('display','none')
-  })
-  $(".sub_nav").mouseleave(function(){
-    $(".sub_nav").css('display','none')
-  })
-</script>
-<script type="text/javascript" src="/resource/javascript/project.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript" src="/dist/project.js?v=11111"></script>
 </body>
 </html>
