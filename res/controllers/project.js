@@ -30,27 +30,31 @@ var app = new Vue({
   },
   mounted: function(){
     const self = this;
+    this.$nextTick(function(){
+      $(window).load(function(){
+          var ww = $(window).width();
+          var hh = parseInt(ww*0.57)
+          $(".project_slider,.swiper-container").css({
+            'height': hh + 'px'
+          })
+          $(".project_list li").css({
+            'height' : (ww/4).toFixed(2) + 'px',
+            'width' : (ww/4).toFixed(2) + 'px'
+          })
 
-    var ww = $(window).width();
-    var hh = parseInt(ww*0.57)
-    $(".project_slider,.swiper-container").css({
-      'height': hh + 'px'
-    })
-    $(".project_list li").css({
-      'height' : (ww/4).toFixed(2) + 'px',
-      'width' : (ww/4).toFixed(2) + 'px'
-    })
+          $(window).resize(function(){
+            var ww = $(window).width();
+            var hh = parseInt(ww*0.57)
+            $(".project_slider,.swiper-container").css({
+              'height': hh + 'px'
+            })
+            $(".project_list li").css({
+              'height' : (ww/4).toFixed(2) + 'px',
+              'width' : (ww/4).toFixed(2) + 'px'
+            })
+          })
+      })
 
-    $(window).resize(function(){
-      var ww = $(window).width();
-      var hh = parseInt(ww*0.57)
-      $(".project_slider,.swiper-container").css({
-        'height': hh + 'px'
-      })
-      $(".project_list li").css({
-        'height' : (ww/4).toFixed(2) + 'px',
-        'width' : (ww/4).toFixed(2) + 'px'
-      })
     })
 
     var mySwiper = new Swiper('.swiper-container',{
