@@ -3,31 +3,6 @@ var type = decodeURIComponent($.getUrlParam('type'))
 $('.sub_title').html(type)
 
   
-
-var ww = $(window).width();
-var hh = parseInt(ww*0.57)
-$(".project_slider,.swiper-container").css({
-  'height': hh + 'px'
-})
-$(".project_list li").css({
-  'height' : (ww/4).toFixed(2) + 'px',
-  'width' : (ww/4).toFixed(2) + 'px'
-})
-
-$(window).resize(function(){
-  var ww = $(window).width();
-  var hh = parseInt(ww*0.57)
-  $(".project_slider,.swiper-container").css({
-    'height': hh + 'px'
-  })
-  $(".project_list li").css({
-    'height' : (ww/4).toFixed(2) + 'px',
-    'width' : (ww/4).toFixed(2) + 'px'
-  })
-
-})
-
-
 var header = require('../components/Header.vue') 
 var app = new Vue({
   el: '#app',
@@ -55,6 +30,29 @@ var app = new Vue({
   },
   mounted: function(){
     const self = this;
+
+    var ww = $(window).width();
+    var hh = parseInt(ww*0.57)
+    $(".project_slider,.swiper-container").css({
+      'height': hh + 'px'
+    })
+    $(".project_list li").css({
+      'height' : (ww/4).toFixed(2) + 'px',
+      'width' : (ww/4).toFixed(2) + 'px'
+    })
+
+    $(window).resize(function(){
+      var ww = $(window).width();
+      var hh = parseInt(ww*0.57)
+      $(".project_slider,.swiper-container").css({
+        'height': hh + 'px'
+      })
+      $(".project_list li").css({
+        'height' : (ww/4).toFixed(2) + 'px',
+        'width' : (ww/4).toFixed(2) + 'px'
+      })
+    })
+
     var mySwiper = new Swiper('.swiper-container',{
       pagination : ".pagination",
       paginationClickable : true,
