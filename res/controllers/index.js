@@ -33,6 +33,7 @@ var app = new Vue({
     var mySwiper = new Swiper('.swiper-container',{
       pagination : ".pagination",
       paginationClickable : true,
+      autoplayDisableOnInteraction: false,
       loop: true,
       autoplay: 7000,
       onSlideChangeStart: function(swiper){
