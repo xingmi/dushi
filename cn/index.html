@@ -16,11 +16,7 @@
 <div class="home_slider">
    <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/1.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/2.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/3.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/4.jpg"></a></div>
-        <div class="swiper-slide"><a href=""><img src="/resource/images/index/5.jpg"></a></div>
+        <div class="swiper-slide" v-for="(item,index) in projectItems"><a :href="'item.html?projectId=' + item.id"><img :src="'/resource/images/index/' + (index + 1) +'.jpg'"></a></div>
     </div>
   </div>
   <div class="container">
@@ -36,6 +32,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/index.js?v=11111"></script>
+<script type="text/javascript" src="/dist/index.js?v=11223344"></script>
 </body>
 </html>
