@@ -7,34 +7,47 @@ $(".home_slider").css({
 $("body").css({
     'display':'block'
 })
-var swiper_text = [
-  {localAndTime: '2018/02 江苏苏州', text: '轮播图1'},
-  {localAndTime: '2018/11 广东广州', text: '轮播图2'},
-  {localAndTime: '2018/04 山东烟台', text: '轮播图3'},
-  {localAndTime: '2018/02 湖北武汉', text: '轮播图4'},
-  {localAndTime: '2018/04 中国上海', text: '轮播图5'},
-]
-var mySwiper = new Swiper('.swiper-container',{
-  pagination : ".pagination",
-  paginationClickable : true,
-  loop: true,
-  autoplay: 7000,
-  onSlideChangeStart: function(swiper){
-      $(swiper.visibleSlides).find('img').addClass('active').end().siblings().find('img').removeClass('active')
-      // $(".swiper-slide:not('')").eq(swiper.activeLoopIndex).find('img').addClass('active').siblings().removeClass('active')
-      $(".swiper_text").html(swiper_text[swiper.activeLoopIndex].text)
-      $(".swiper_time").html(swiper_text[swiper.activeLoopIndex].localAndTime)
+var swiper_text = [ "004", "001", "011", "007", "003"]
+ 
+// $(".sub_project a").on('click',function(e){
+//   window.location.href = 'project.html?type=' + encodeURIComponent($(this).html())
+// })
+
+var header = require('../components/Header.vue') 
+var app = new Vue({
+  el: '#app',
+  components: {
+    'duHeader' : header
   },
-  onSwiperCreated: function(){
-      $(".swiper_text").html(swiper_text[0].text)
-      $(".swiper_time").html(swiper_text[0].localAndTime)
-      $(".swiper-slide").eq(1).find('img').addClass('active')
+  data: {
+    projectItems: [],
+    isPhoto: true
+  },
+  created: function(){
+    for (var i = 0; i < swiper_text.length; i++){
+      this.projectItems.push(projectData[swiper_text[i]])
+    }
+  },
+  mounted: function(){
+    var self = this;
+    var mySwiper = new Swiper('.swiper-container',{
+      pagination : ".pagination",
+      paginationClickable : true,
+      loop: true,
+      autoplay: 7000,
+      onSlideChangeStart: function(swiper){
+          $(swiper.visibleSlides).find('img').addClass('active').end().siblings().find('img').removeClass('active')
+          // $(".swiper-slide:not('')").eq(swiper.activeLoopIndex).find('img').addClass('active').siblings().removeClass('active')
+          $(".swiper_text").html(self.projectItems[swiper.activeLoopIndex].name)
+          $(".swiper_time").html(self.projectItems[swiper.activeLoopIndex].startTime || self.projectItems[swiper.activeLoopIndex].endTime + ' ' + self.projectItems[swiper.activeLoopIndex].address)
+      },
+      onSwiperCreated: function(){
+          $(".swiper_text").html(self.projectItems[0].name)
+          $(".swiper_time").html(self.projectItems[0].startTime || self.projectItems[0].endTime + ' ' + self.projectItems[0].address)
+          $(".swiper-slide").eq(1).find('img').addClass('active')
+      }
+    });
   }
-});  
-
-
-$(".sub_project a").on('click',function(e){
-  window.location.href = 'project.html?type=' + encodeURIComponent($(this).html())
 })
 
 
