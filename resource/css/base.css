@@ -143,20 +143,25 @@ body{
 }
 .sub_project li{
   padding-top: 40px;
-  float: left;
+  // float: left;
   width: 190px;
   margin-right: 50px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
 }
 
 .sub_project li h4{
   color: #808080;
   font-size: 14px;
+  text-align: left;
 }
 .sub_project li a{
   width: 90px;
   display: inline-block;
   margin-top: 20px;
   color: #a0a0a0;
+  text-align: left;
 }
 .sub_project li a.current{
   color: #000;
@@ -216,6 +221,7 @@ body{
   padding-left: 50px;
   box-sizing: border-box;
   display: none;
+  text-align: right;
 }
 .sub_nav.single{
   line-height: 100px;

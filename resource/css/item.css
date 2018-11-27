@@ -112,7 +112,7 @@
   position: absolute;
   width: 20px;
   height: 38px;
-  background: #fff;
+  // background: #fff;
   top: 48%;
   cursor: pointer;
 }
