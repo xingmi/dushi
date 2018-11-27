@@ -41,8 +41,18 @@ var app = new Vue({
       },
       onSwiperCreated: function(){
           // $(".swiper-slide").eq(1).find('img').addClass('active')
-      }
+      },
+      prevButton: '.swiper-button-prev',
+      nextButton: '.swiper-button-next'
     });
+
+    $("#photoSwiperPrev").on('click',function(){
+      photoMySwiper.swipePrev(); 
+    })
+
+    $("#photoSwiperNext").on('click',function(){
+      photoMySwiper.swipeNext(); 
+    })
 
     // 设计
     var designMySwiper = new Swiper('.design_swiper_container',{
@@ -55,8 +65,19 @@ var app = new Vue({
       },
       onSwiperCreated: function(){
           // $(".swiper-slide").eq(1).find('img').addClass('active')
-      }
+      },
+      prevButton: '.swiper-button-prev',
+      nextButton: '.swiper-button-next'
     });  
+
+    $("#designSwiperPrev").on('click',function(){
+      designMySwiper.swipePrev(); 
+    })
+
+    $("#designSwiperNext").on('click',function(){
+      designMySwiper.swipeNext(); 
+    })
+
 
   }
 })

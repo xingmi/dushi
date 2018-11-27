@@ -105,4 +105,22 @@
 }
 .swiper-container{
   // height: 840px;
+  position: relative;
+}
+
+.swiper_btn{
+  position: absolute;
+  width: 20px;
+  height: 38px;
+  background: #fff;
+  top: 48%;
+  cursor: pointer;
+}
+.swiper-button-next{
+  right: 40px;
+  background: url('/resource/images/common/next.png')
+}
+.swiper-button-prev{
+  left: 40px;
+    background: url('/resource/images/common/prev.png')
 }

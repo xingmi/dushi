@@ -1,6 +1,6 @@
 <template>   
     <div class="nav container">
-        <a href="/" class="logo">    
+        <a href="/cn/index.html" class="logo">    
         </a>
         <ul class="nav_list">
           <li><a href="/cn/index.html">首页</a></li>

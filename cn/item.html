@@ -31,6 +31,8 @@
                 <img :src="'/resource/images/project/' + projectItem.id + projectItem.name +'/照片/'+item+'.jpg'">
               </div>
           </div>
+          <div class="swiper_btn swiper-button-prev" id="photoSwiperPrev" v-show="projectItem.photos > 1"></div>
+          <div class="swiper_btn swiper-button-next" id="photoSwiperNext" v-show="projectItem.photos > 1"></div>
         </div>
         <div class="pagination photos_pagination" v-show="projectItem.photos > 1">
         </div>
@@ -43,6 +45,8 @@
                 <img :src="'/resource/images/project/' + projectItem.id + projectItem.name +'/设计/'+item+'.jpg'">
               </div>
           </div>
+          <div class="swiper-button-prev swiper_btn" id="designSwiperPrev" v-show="projectItem.design > 1"></div>
+          <div class="swiper-button-next swiper_btn" id="designSwiperNext" v-show="projectItem.design > 1"></div>
         </div>
         <div class="pagination design_pagination" v-show="projectItem.design > 1">
         </div>
@@ -78,6 +82,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/item.js?v=11223344"></script>
+<script type="text/javascript" src="/dist/item.js?v=55555555"></script>
 </body>
 </html>
