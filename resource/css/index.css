@@ -16,9 +16,9 @@ body{
   // transition: 5s ease;
   // transform-origin: center center;
 }
-.home_slider .swiper-container div img.active{
-  transform: scale(1.2)
-}
+// .home_slider .swiper-container div img.active{
+  // transform: scale(1.2)
+// }
 .home_slider .pagination{
   z-index: 1;
   position: absolute;
@@ -69,4 +69,32 @@ body{
   color: #FFF;
   font-size: 20px;
   font-weight: lighter;
+}
+.nav:hover{
+  background: #000;
+}
+.nav .nav_list>li a:hover{
+  color: #FFF;
+}
+.sub_nav{
+  background: #000;
+}
+// .sub_project li h4{
+//   color: #fff;
+// }
+.sub_project li a:hover{
+  color: #FFF;
+}
+.sub_nav a:hover,
+.sub_nav.single li a:hover{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.sub_nav{
+  border-top: 1px solid #2f2f2f;
+}
+
+.nav:hover .logo{
+  background: url('/resource/images/common/logo.png') no-repeat;
 }

@@ -6,6 +6,8 @@
 }
 .sub_title .project_name{
   margin-top: 15px;
+  color: #424242;
+  font-weight: 200;
 }
 .sub_title .change_module{
   margin-top: 5px;
@@ -18,7 +20,7 @@
 }
 .sub_title .change_module span:hover,
 .sub_title .change_module span.current{
-  color: #000;
+  color: #424242;
 
 }
 

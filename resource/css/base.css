@@ -117,7 +117,7 @@ body{
 }
 
 .nav{
-  min-height: 100px;
+  min-height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,7 +159,7 @@ body{
 .sub_project li a{
   width: 90px;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   color: #a0a0a0;
   text-align: left;
 }
@@ -183,7 +183,7 @@ body{
   width: 45px;
   height: 45px;
   display: block;
-  top: 30px;
+  top: 20px;
   left: 50px;
 }
 .nav:hover .logo{
@@ -191,7 +191,7 @@ body{
 }
 .nav .nav_list{
   position: absolute;
-  top: 42px;
+  top: 32px;
   right: 20px;
 }
 .nav .nav_list li{
@@ -213,9 +213,9 @@ body{
 }
 .sub_nav{
   width: 100%;
-  min-height: 99px;
+  min-height: 80px;
   position: absolute;
-  top:100px;
+  top:80px;
   background: #FFF;
   border-top: 1px solid #b5b5b5;
   padding-left: 50px;
@@ -224,7 +224,7 @@ body{
   text-align: right;
 }
 .sub_nav.single{
-  line-height: 100px;
+  line-height: 80px;
 }
 .sub_nav.single li a{
   color: #a0a0a0;

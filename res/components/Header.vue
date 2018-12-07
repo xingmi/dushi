@@ -42,15 +42,6 @@
             <a href="project.html?type=规划" :class="{current: urlType == '规划'}">规划</a>
             <a href="project.html?type=建筑" :class="{current: urlType == '建筑'}">建筑</a>
           </li>
-          <li>
-            <h4>研究项目</h4>
-            <a href="javascript:void(0)"></a>
-            <a href="javascript:void(0)"></a>
-            <a href="javascript:void(0)"></a>
-            <a href="javascript:void(0)"></a>
-            <a href="javascript:void(0)"></a>
-            <a href="javascript:void(0)"></a>
-          </li>
         </ol>
         <ol class="sub_nav single sub_nav_3">
           <li>
@@ -65,7 +56,6 @@
             <a href="">主要成员</a>
             <a href="">工作机会</a>
             <a href="">联系我们</a>
-            <a href="">管理结构</a>
           </li>
         </ol>
     </div>
