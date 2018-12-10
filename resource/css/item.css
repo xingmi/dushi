@@ -8,9 +8,10 @@
   margin-top: 15px;
   color: #424242;
   font-weight: 200;
+  font-size: 24px;
 }
 .sub_title .change_module{
-  margin-top: 5px;
+  margin-top: 4px;
   font-size: 12px; 
 }
 .sub_title .change_module span{

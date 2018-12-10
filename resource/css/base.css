@@ -142,7 +142,7 @@ body{
   display: block;
 }
 .sub_project li{
-  padding-top: 40px;
+  padding-top: 20px;
   // float: left;
   width: 190px;
   margin-right: 50px;
@@ -275,8 +275,10 @@ body{
   color: #bdbdbd;
 }
 .common_footer h5{
-  margin-top: 25px
+  margin-top: 25px;
+  font-weight:200;
 }
 .common_footer h6{
   margin-top: 15px;
+  font-weight: 200;
 }
