@@ -213,7 +213,7 @@ body{
 }
 .sub_nav{
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   position: absolute;
   top:80px;
   background: #FFF;
@@ -224,7 +224,7 @@ body{
   text-align: right;
 }
 .sub_nav.single{
-  line-height: 80px;
+  line-height: 60px;
 }
 .sub_nav.single li a{
   color: #a0a0a0;

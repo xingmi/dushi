@@ -69,6 +69,7 @@ Basic Swiper Styles
 	margin: 0 auto;
 }
 .swiper-slide {
+	width: 100%;
 	float: left;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
