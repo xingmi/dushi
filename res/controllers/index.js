@@ -7,7 +7,7 @@ $(".home_slider").css({
 $("body").css({
     'display':'block'
 })
-var swiper_text = [ "004", "001", "011", "007", "003"]
+var swiper_text = [ "004", "001", "011", "011","007", "003"]
  
 // $(".sub_project a").on('click',function(e){
 //   window.location.href = 'project.html?type=' + encodeURIComponent($(this).html())
