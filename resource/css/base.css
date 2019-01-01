@@ -116,6 +116,12 @@ body{
   // position: relative;
 }
 
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .nav{
   min-height: 80px;
   position: absolute;

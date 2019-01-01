@@ -52,10 +52,10 @@
         </ol>
         <ol class="sub_nav single sub_nav_4">
           <li>
-            <a href="">奖项</a>
-            <a href="">主要成员</a>
-            <a href="">工作机会</a>
-            <a href="">联系我们</a>
+            <a href="awards.html">奖项</a>
+            <a href="member.html">主要成员</a>
+            <a href="jobs.html">工作机会</a>
+            <a href="contact.html">联系我们</a>
           </li>
         </ol>
     </div>

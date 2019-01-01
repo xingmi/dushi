@@ -1,0 +1,96 @@
+.single_project .banner img{
+  display: block;
+  width: 100%;
+}
+
+.single_project .content {
+  padding: 50px 5%;
+}
+
+.single_project .content.awards_content {
+  padding: 50px 2% 0 10%;
+}
+
+.single_project .content.jobs_content{
+  padding: 50px 5% 150px 5%;
+}
+.single_project .content .line{
+  margin:40px 0 50px 0;
+  height: 1px;
+  background: #d3d3d3;
+  margin-right: 8%;
+}
+// .single_project .content .list:nth-child(1){
+//   margin-top: 50px;
+// }
+.single_project .content .list:last-child{
+  margin-bottom: 50px;
+}
+.single_project .content .list li {
+  box-sizing: border-box;
+  width: 25%;
+  padding-right: 8%;
+  float: left;
+  text-align: center;
+  color: #000;
+}
+.single_project .content .list li h3 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 200;
+  padding-top: 5px;
+}
+.single_project .content .list li h4 {
+  padding-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 200;
+  color: #0c0c0c;
+}
+.single_project .content .list li h5 {
+  padding-top: 5px;
+  font-weight: 200;
+  color: #0c0c0c;
+}
+.single_project .content .list li img{
+  width: 100%;
+}
+
+.single_project .content .content_box .content_title{
+  font-size: 14px;
+  color: #000;
+}
+
+.single_project .content .content_box .content_msg{
+  color: #6d6d6d;
+  line-height: 22px;
+}
+.single_project .content .content_box .content_msg p {
+  color: #000;
+}
+
+.single_project .member_content{
+  padding: 0 14% 50px 14%;
+}
+
+.single_project .member_content li {
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+}
+.single_project .member_content li img{
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+.single_project .member_content li h3 {
+  margin-top: 8px;
+  color: #000;
+}
+.single_project .member_content li h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}

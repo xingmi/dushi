@@ -8,11 +8,13 @@ $(".project_slider,.swiper-container").css({
   'height': hh + 'px'
 })
   
-var header = require('../components/Header.vue') 
+var header = require('../components/Header.vue')
+var footer = require('../components/Footer.vue') 
 var app = new Vue({
   el: '#app',
   components: {
-    'duHeader' : header
+    'duHeader' : header,
+    'duFooter' : footer
   },
   data: {
     itemData: []
