@@ -11,9 +11,9 @@
         </ul>
         <ol class="sub_nav single sub_nav_1">
           <li>
-            <a href="javascript:void(0)">一体化设计</a>
-            <a href="javascript:void(0)">价值发掘者</a>
-            <a href="javascript:void(0)">高完成度</a>
+            <a href="idea.html?type=design&number=3">一体化设计</a>
+            <a href="idea.html?type=value&number=3">价值发掘者</a>
+            <a href="idea.html?type=completeness&number=3">高完成度</a>
           </li>
         </ol>
         <ol class="sub_nav sub_project sub_nav_2 clear_fix">
@@ -45,9 +45,9 @@
         </ol>
         <ol class="sub_nav single sub_nav_3">
           <li>
-            <a href="">新闻</a>
-            <a href="">出版物/文章</a>
-            <a href="">在网络媒体的宣传</a>
+            <a href="news.html?type=news">新闻</a>
+            <a href="news.html?type=articles">出版物/文章</a>
+            <a href="news.html?type=propaganda">在网络媒体的宣传</a>
           </li>
         </ol>
         <ol class="sub_nav single sub_nav_4">

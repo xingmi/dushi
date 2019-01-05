@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>项目</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=123777">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=123777">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=123777">
+  <link rel="stylesheet" type="text/css" href="/resource/css/item.css?v=123777">
+  <script type="text/javascript" src="/resource/data/data.js"></script>
+  <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
+  <script type="text/javascript" src="/res/lib/home_swiper.min.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+  <du-header></du-header>
+  <div>
+    <div class="sub_title idea_title">
+      <div class="project_name">{{title}}</div>
+    </div> 
+    <div class="project">
+      <div class="project_slider">
+        <div class="swiper-container photos_swiper_container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="item in photos">
+                <img :src="'/resource/images/'+ type +'/'+item+'.jpg'">
+              </div>
+          </div>
+          <div class="swiper_btn swiper-button-prev" id="photoSwiperPrev" v-show="photos > 1"></div>
+          <div class="swiper_btn swiper-button-next" id="photoSwiperNext" v-show="photos > 1"></div>
+        </div>
+        <div class="pagination photos_pagination" v-show="photos > 1">
+        </div>
+      </div>
+    </div>
+
+    <div class="project_intro clear_fix">
+      <div class="left_module">
+        <h5 class="title">
+          {{introTitle}}
+        </h5>
+        <p>
+          {{introContent}}
+        </p>
+      </div> 
+      <div class="right_module"></div>
+    </div>
+    
+  </div>
+  <du-footer></du-footerr>
+</div>
+
+<script src="/res/lib/vue.js"></script>
+<script type="text/javascript" src="/dist/idea.js?v=123777"></script>
+</body>
+</html>

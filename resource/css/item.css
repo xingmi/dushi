@@ -4,11 +4,18 @@
 .sub_title{
   line-height: 30px;
 }
+.sub_title.idea_title {
+  line-height: 90px;
+}
 .sub_title .project_name{
   margin-top: 15px;
   color: #424242;
   font-weight: 200;
   font-size: 24px;
+}
+
+.sub_title.idea_title .project_name{
+  margin-top: 0;
 }
 .sub_title .change_module{
   margin-top: 4px;
@@ -78,6 +85,13 @@
   float: left;
   padding-right: 500px;
   box-sizing: border-box;
+}
+
+.project_intro .left_module .title{
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: #000;
 }
 .project_intro .left_module p{
   margin-bottom: 30px;

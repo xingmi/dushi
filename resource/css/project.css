@@ -128,3 +128,141 @@
   left: 40px;
     background: url('/resource/images/common/prev.png')
 }
+
+
+.news_list{
+  padding: 0 50px;
+}
+.news_list li{
+  cursor: pointer;
+  float: left;
+  padding-top: 4px;
+  padding-right: 7px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #FFF;
+  overflow: hidden;
+}
+.news_list li:nth-child(4n){
+  padding-right: 0;
+}
+.news_list li:nth-child(4n) div{
+  padding-right: 7px;
+  box-sizing: border-box;
+}
+.news_list li div{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.news_list li div a{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.news_list li div .project_intro{
+  
+}
+.news_list li div .project_intro span{
+  display: block;
+}
+.news_list li img{
+  // transition: 1.5s ease;
+  // transform-origin:center center;
+  width: 100%;
+}
+.news_list li:hover img{
+  // transform: scale(1.1);
+}
+.news_list li div .project_intro .contentTitle{
+  color: #000;
+  line-height: 30px;  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.news_list li div .project_intro .contentMsg{
+  display: -webkit-box;    
+  -webkit-box-orient: vertical;    
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+  // white-space: nowrap;
+}
+.news_list li div .project_intro .contentTime{
+  line-height: 30px;
+}
+
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 111;
+  display: none;
+}
+
+.mask_cotent{
+  background: #FFF;
+  position: absolute;
+  // overflow: scroll;
+}
+.mask_message{
+  height: 100%;
+  position: relative;
+}
+.mask_cotent img{
+  width: 100%;
+}
+.mask .close{
+  text-align: right;
+  line-height: 40px;
+  padding-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFF;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.mask_cotent .box{
+  height: 100%;
+  overflow: scroll;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.mask_cotent  .mask_intro{
+  padding: 0 6%
+}
+
+
+.mask_cotent .mask_intro span{
+  display: block;
+}
+.mask_cotent .mask_intro .contentTitle{
+  font-size: 16px;
+  color: #000;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.mask_cotent .mask_intro .contentTime {
+  text-align: right;
+}
+.mask_cotent .mask_intro .contentMsg{
+  padding-top: 10px;
+  line-height: 22px;
+  padding-bottom: 40px;
+}
+
