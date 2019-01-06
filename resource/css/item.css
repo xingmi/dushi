@@ -1,6 +1,21 @@
 .swiper-slide img{
   width: 100%;
 }
+
+
+.project_slider .swiper-slide{
+  position: relative;
+}
+.project_slider .swiper-slide a{
+  display: block;
+}
+.project_slider .swiper-slide img{
+  width: 100%;
+  position: absolute;
+  top: -20%;
+  left: 0;
+}
+
 .sub_title{
   line-height: 30px;
 }

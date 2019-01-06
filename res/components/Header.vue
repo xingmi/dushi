@@ -74,10 +74,12 @@ module.exports = {
     },
     mounted: function(){
         $(".nav_list li a").hover(function(){
-            console.log('sub_nav_'+$(this).data('index'))
             $('.sub_nav_'+$(this).data('index')).css('display','block').siblings('.sub_nav').css('display','none')
           })
           $(".sub_nav").mouseleave(function(){
+            $(".sub_nav").css('display','none')
+          })
+          $(".nav").mouseleave(function(){
             $(".sub_nav").css('display','none')
           })
       },

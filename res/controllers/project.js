@@ -3,7 +3,7 @@ var type = decodeURIComponent($.getUrlParam('type'))
 $('.sub_title').html(type)
 
 var ww = $(window).width();
-var hh = parseInt(ww*0.57)
+var hh = parseInt(ww*0.47)
 $(".project_slider,.swiper-container").css({
   'height': hh + 'px'
 })
@@ -21,7 +21,60 @@ var app = new Vue({
   },
   computed: {
     scrollItemData: function (){
-      return this.itemData.slice(0, 5) || []
+      // return this.itemData.slice(0, 5) || []
+      var projectArray = []
+      switch(type) {
+        case '华北':
+          // 缺少金泰
+          projectArray = ['009', '010', '002', '126']
+        break;
+        case '华东':
+          // 缺少金泰
+          projectArray = ['004', '007', '011', '003', '123']
+        break;
+        case '华南':
+          projectArray = ['159']
+        break;
+        case '华中':
+          projectArray = ['001', '145', '017', '005', '018']
+        break;
+        case '西南':
+          projectArray = ['019', '015', '006', '104', '129']
+        break;
+        case '规划':
+          projectArray = ['005', '006', '019', '123', '111']
+        break;
+        case '建筑':
+          projectArray = ['004', '007', '011', '009', '145']
+        break;
+        case '室内':
+          projectArray = ['007', '011', '009', '010', '017']
+        break;
+        case '一体化设计':
+          projectArray = ['001', '007', '011', '002', '014']
+        break;
+        case '城市更新':
+          projectArray = ['003', '007', '011']
+        break;
+        case '酒店':
+          projectArray = ['007', '117', '019', '123', '113']
+        break;
+        case '商业+办公':
+          projectArray = ['005', '017', '006', '018', '110']
+        break;
+        case '文化':
+          projectArray = ['009', '010', '011', '015', '014']
+        break;
+        case '住宅':
+          projectArray = ['004', '145', '111', '006', '153']
+        break;
+        default:;
+      }
+      var projectArrayList = []
+      projectArray.map(function(key){
+        projectArrayList.push(projectData[key])
+      })
+      return projectArrayList
     }
   },
   created: function(){
@@ -37,24 +90,25 @@ var app = new Vue({
   },
   mounted: function(){
     const self = this;
-        var ww = document.body.clientWidth;
-        var hh = parseInt(ww*0.57)
-        $(".project_list li").css({
-          'height' : (ww/4).toFixed(2) + 'px',
-          'width' : (ww/4).toFixed(2) + 'px'
-        })
 
-        $(window).resize(function(){
-          var ww = document.body.clientWidth;
-          var hh = parseInt(ww*0.57)
-          $(".project_slider,.swiper-container").css({
-            'height': hh + 'px'
-          })
-          $(".project_list li").css({
-            'height' : (ww/4).toFixed(2) + 'px',
-            'width' : (ww/4).toFixed(2) + 'px'
-          })
-        })
+    var ww = document.body.clientWidth;
+    var hh = parseInt(ww*0.47)
+    $(".project_list li").css({
+      'height' : (ww/4).toFixed(2) + 'px',
+      'width' : (ww/4).toFixed(2) + 'px'
+    })
+
+    $(window).resize(function(){
+      var ww = document.body.clientWidth;
+      var hh = parseInt(ww*0.47)
+      $(".project_slider,.swiper-container").css({
+        'height': hh + 'px'
+      })
+      $(".project_list li").css({
+        'height' : (ww/4).toFixed(2) + 'px',
+        'width' : (ww/4).toFixed(2) + 'px'
+      })
+    })
 
 
     var mySwiper = new Swiper('.swiper-container',{

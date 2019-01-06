@@ -98,7 +98,40 @@ var contentList = {
     ]
   },
   'propaganda': {
-    title: ' 在网络媒体的宣传'
+    title: ' 在网络媒体的宣传',
+    list: [
+      {
+        contentTitle: '南京白云亭副食品市场蜕变记',
+        content: '现在炒得最沸沸扬扬的莫过于上海市和深圳市提出的“城市更新”了，而在两三年前，都设就已经开始实践了。在南京一个新近落成的案例中，上海都设将一座1999年落成的副食品市场更新成为了全新的文化艺术中心。在本案中，都设为业主提供了建筑、室内、景观的一体化设计服务，这是继江阴嘉荷酒店之后都设在城市更新和旧建筑改造设计领域的又一个代表作。',
+        contentTime: '2015/03/10',
+        link: 'https://www.gooood.cn/baiyunting-culture-art-center.htm'
+      },
+      {
+        contentTitle: '嘉荷精品酒店改造',
+        content: '江阴嘉荷精品酒店位于江阴东部新城,雨山湖畔,建筑面积7000平方米。此项目为改造项目,前身为办公楼,改造后成为50间客房,8间餐饮包间,宴会厅,会议室,游泳池均配备齐全的精品酒店。这一项目是上海都设建筑设计有限公司从建筑到室内到景观一体化设计的尝试,体现了设计师对于项目完成度的不懈追求。',
+        contentTime: '2014/06/24',
+        link: 'https://www.gooood.cn/jiahe-boutique-hotel-shdsd.htm'
+      },
+      {
+        contentTitle: '圈保利大剧院',
+        content: '大剧院采用简洁的体量，丰富的细节表现出现代建筑实用、美观、富有时代感的特性，极富时代感的外墙喻示营口经济开发区奔向国际的新气象。大剧院既要考虑东南侧景观，也要考虑到日月大道视线，因此，各个立面统一采用波浪形金属半透明材料，形成统一的立面形象，在此基础上根据功能情况又作了不同的细节处理，使其在和谐统一中富有变化。建筑东高西低，这样的处理使平安大街和日月大道上的人看不到剧场高起的部分，保持了建筑的整体形象。',
+        contentTime: '2013/07/29',
+        link: 'https://www.gooood.cn/bayuquan-baoli-theatre-by-dsd.htm'
+      },
+      {
+        contentTitle: '武汉西北湖双玺',
+        content: '西北湖双玺是由上海都设设计的武汉汉口核心区最受瞩目的项目---武汉顶绣西北湖综合体的一期写字楼部分。该项目由一期双塔写字楼和二期超高层住宅、超高层写字楼构成。西北湖双玺写字楼包含两个部分，两栋23层办公塔楼和4层裙房，其中裙房1-2层为商铺和3-4层为办公、商业。本项目是上海都设高完成度与一体化设计的代表作品之一。',
+        contentTime: '2018/09/27',
+        link: 'http://www.archdaily.cn/cn/902359/wu-yi-xi-bei-hu-shuang-xi-shang-hai-du-she-ying-zao-jian-zhu-she-ji-shi-wu-suo'
+      },
+      {
+        contentTitle: '苏州姑苏雅集',
+        content: '项目位于姑苏古城核心区，紧邻沧浪亭。整个基地环境古朴典雅。0.64的容积率注定了这是一个颇具挑战性的规划，如何延续老的城市肌理是关键。设计师不仅仅想设计一个简单的住宅区，而是一个具有艺术气息的多功能社区。',
+        contentTime: '2018/09/26',
+        link: 'http://www.archdaily.cn/cn/902311/su-zhou-gu-su-ya-ji-shang-hai-du-she-ying-zao-jian-zhu-she-ji-shi-wu-suo'
+      },
+      
+    ]
   }
 
 }

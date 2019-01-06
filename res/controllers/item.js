@@ -1,14 +1,14 @@
 var projectId = decodeURIComponent($.getUrlParam('projectId'))
 
 var ww = $(window).width();
-var hh = parseInt(ww*0.57)
+var hh = parseInt(ww*0.47)
 $(".project_slider,.swiper-container").css({
   'height': hh + 'px'
 })
 
 $(window).resize(function(){
   var ww = $(window).width();
-  var hh = parseInt(ww*0.57)
+  var hh = parseInt(ww*0.47)
   $(".project_slider,.swiper-container").css({
     'height': hh + 'px'
   })
