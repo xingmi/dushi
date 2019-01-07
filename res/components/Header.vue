@@ -11,9 +11,9 @@
         </ul>
         <ol class="sub_nav single sub_nav_1">
           <li>
-            <a href="idea.html?type=design&number=3">一体化设计</a>
-            <a href="idea.html?type=value&number=3">价值发掘者</a>
-            <a href="idea.html?type=completeness&number=3">高完成度</a>
+            <a href="idea.html?type=design&number=3" :class="{current: urlType == 'design'}">一体化设计</a>
+            <a href="idea.html?type=value&number=3" :class="{current: urlType == 'value'}">价值发掘者</a>
+            <a href="idea.html?type=completeness&number=3" :class="{current: urlType == 'completeness'}">高完成度</a>
           </li>
         </ol>
         <ol class="sub_nav sub_project sub_nav_2 clear_fix">
@@ -45,17 +45,17 @@
         </ol>
         <ol class="sub_nav single sub_nav_3">
           <li>
-            <a href="news.html?type=news">新闻</a>
-            <a href="news.html?type=articles">出版物/文章</a>
-            <a href="news.html?type=propaganda">在网络媒体的宣传</a>
+            <a href="news.html?type=news" :class="{current: urlType == 'news'}">新闻</a>
+            <a href="news.html?type=articles" :class="{current: urlType == 'articles'}">出版物/文章</a>
+            <a href="news.html?type=propaganda" :class="{current: urlType == 'propaganda'}">在网络媒体的宣传</a>
           </li>
         </ol>
         <ol class="sub_nav single sub_nav_4">
           <li>
-            <a href="awards.html">奖项</a>
-            <a href="member.html">主要成员</a>
-            <a href="jobs.html">工作机会</a>
-            <a href="contact.html">联系我们</a>
+            <a href="awards.html?type=award" :class="{current: urlType == 'award'}">奖项</a>
+            <a href="member.html?type=member" :class="{current: urlType == 'member'}">主要成员</a>
+            <a href="jobs.html?type=join" :class="{current: urlType == 'join'}">工作机会</a>
+            <a href="contact.html?type=contact" :class="{current: urlType == 'contact'}">联系我们</a>
           </li>
         </ol>
     </div>

@@ -2,14 +2,14 @@ var type = decodeURIComponent($.getUrlParam('type'))
 var number = decodeURIComponent($.getUrlParam('number'))
 
 var ww = $(window).width();
-var hh = parseInt(ww*0.57)
+var hh = parseInt(ww*0.47)
 $(".project_slider,.swiper-container").css({
   'height': hh + 'px'
 })
 
 $(window).resize(function(){
   var ww = $(window).width();
-  var hh = parseInt(ww*0.57)
+  var hh = parseInt(ww*0.47)
   $(".project_slider,.swiper-container").css({
     'height': hh + 'px'
   })
@@ -60,7 +60,7 @@ var app = new Vue({
       paginationClickable : true,
       autoplayDisableOnInteraction: false,
       loop: this.photos > 1 ? true : false,
-      autoplay: 7000,
+      // autoplay: 7000,
       onSlideChangeStart: function(swiper){
       },
       onSwiperCreated: function(){

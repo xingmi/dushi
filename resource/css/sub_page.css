@@ -7,8 +7,12 @@
 }
 .sub_nav a,
 .sub_nav.single li a{
-  color: #000;
+  color: #a0a0a0;
   font-weight: bold;
+}
+
+.sub_nav.single li a.current{
+  color: #000;
 }
 
 .nav{

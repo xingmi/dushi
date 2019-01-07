@@ -140,12 +140,12 @@
 
 
 .news_list{
-  padding: 0 50px;
+  padding: 0 50px 150px 50px;
 }
 .news_list li{
   cursor: pointer;
   float: left;
-  padding-top: 4px;
+  padding-bottom: 15px;
   padding-right: 7px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -194,6 +194,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  padding-right: 10px;
 }
 
 .news_list li div .project_intro .contentMsg{
@@ -201,6 +202,7 @@
   -webkit-box-orient: vertical;    
   -webkit-line-clamp: 2;    
   overflow: hidden;
+  padding-right: 10px;
   // white-space: nowrap;
 }
 .news_list li div .project_intro .contentTime{
