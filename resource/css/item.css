@@ -142,17 +142,21 @@
 
 .swiper_btn{
   position: absolute;
-  width: 20px;
-  height: 38px;
-  // background: #fff;
   top: 48%;
   cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background: rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .swiper-button-next{
   right: 40px;
-  background: url('/resource/images/common/next.png')
+  background-image: url('/resource/images/common/next.png')
 }
 .swiper-button-prev{
   left: 40px;
-    background: url('/resource/images/common/prev.png')
+    background-image: url('/resource/images/common/prev.png')
 }

@@ -68,7 +68,9 @@ var app = new Vue({
         case '住宅':
           projectArray = ['004', '145', '111', '006', '153']
         break;
-        default:;
+        default:
+          return this.itemData.slice(0,5)
+        ;
       }
       var projectArrayList = []
       projectArray.map(function(key){
@@ -87,6 +89,8 @@ var app = new Vue({
         this.itemData.push(projectData[item])
       }
     }
+
+    console.log(this.itemData)
   },
   mounted: function(){
     const self = this;

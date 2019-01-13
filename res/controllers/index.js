@@ -48,6 +48,13 @@ var app = new Vue({
           $(".swiper-slide").eq(1).find('img').addClass('active')
       }
     });
+        $("#designSwiperPrev").on('click',function(){
+      mySwiper.swipePrev(); 
+    })
+
+    $("#designSwiperNext").on('click',function(){
+      mySwiper.swipeNext(); 
+    })
   }
 })
 

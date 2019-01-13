@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>都市设计</title>
+  <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=123321">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=123321">
-  <link rel="stylesheet" type="text/css" href="/resource/css/index.css?v=123321">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=36543">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=36543">
+  <link rel="stylesheet" type="text/css" href="/resource/css/index.css?v=36543">
   <script type="text/javascript" src="/resource/data/data.js"></script>
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
   <script type="text/javascript" src="/res/lib/home_swiper.min.js"></script>
@@ -19,6 +19,8 @@
         <div class="swiper-slide" v-for="(item,index) in projectItems"><a :href="'item.html?projectId=' + item.id"><img :src="'/resource/images/index/' + (index + 1) +'.jpg'"></a></div>
     </div>
   </div>
+  <div class="swiper-button-prev swiper_btn" id="designSwiperPrev"></div>
+  <div class="swiper-button-next swiper_btn" id="designSwiperNext"></div>
   <div class="container">
     <div class="pagination">
     </div>
@@ -32,6 +34,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/index.js?v=123321"></script>
+<script type="text/javascript" src="/dist/index.js?v=36543"></script>
 </body>
 </html>

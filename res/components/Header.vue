@@ -25,22 +25,22 @@
             <a href="project.html?type=华南" :class="{current: urlType == '华南'}">华南</a>
             <a href="project.html?type=西南" :class="{current: urlType == '西南'}">西南</a>
           </li>
-          <li>
+          <li style="width: 220px;">
             <h4>类型</h4>
             <a href="project.html?type=商业+办公" :class="{current: urlType == '商业+办公'}">商业+办公</a>
-            <a href="project.html?type=住宅" :class="{current: urlType == '住宅'}">住宅</a>
+            <a href="project.html?type=住宅" :class="{current: urlType == '住宅'}" style="width: 50px;">住宅</a>
             <a href="project.html?type=酒店" :class="{current: urlType == '酒店'}">酒店</a>
             <a href="project.html?type=旅游小镇" :class="{current: urlType == '旅游小镇'}">旅游小镇</a>
-            <a href="project.html?type=文化" :class="{current: urlType == '文化'}">文化</a>
+            <a href="project.html?type=文化" :class="{current: urlType == '文化'}" style="width: 50px;">文化</a>
             <a href="project.html?type=城市更新" :class="{current: urlType == '城市更新'}">城市更新</a>
           </li>
           <li>
             <h4>服务</h4>
             <a href="project.html?type=设计总协调" :class="{current: urlType == '设计总协调'}">设计总协调</a>
-            <a href="project.html?type=室内" :class="{current: urlType == '室内'}">室内</a>
+            <a href="project.html?type=室内" :class="{current: urlType == '室内'}" style="width: 50px;">室内</a>
             <a href="project.html?type=一体化设计" :class="{current: urlType == '一体化设计'}">一体化设计</a>
             <a href="project.html?type=规划" :class="{current: urlType == '规划'}">规划</a>
-            <a href="project.html?type=建筑" :class="{current: urlType == '建筑'}">建筑</a>
+            <a href="project.html?type=建筑" :class="{current: urlType == '建筑'}" style="width: 50px;">建筑</a>
           </li>
         </ol>
         <ol class="sub_nav single sub_nav_3">

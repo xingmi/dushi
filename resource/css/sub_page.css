@@ -1,36 +1,54 @@
 .nav{
   position: relative;
 }
-.nav .nav_list li a,
-.nav .nav_list li a.current{
-  color: #000000;
+
+.nav,
+.nav:hover{
+  background: rgba(0,0,0,.5);
 }
-.sub_nav a,
-.sub_nav.single li a{
+.nav .nav_list>li a:hover{
+  color: #FFF;
+}
+.sub_nav{
+  background: rgba(0,0,0,.5);
+}
+.sub_project li h4{
+  color: #595959;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nav .nav_list>li a{
+  display: block;
+  height: 100%;
   color: #a0a0a0;
+}
+.nav:hover .nav_list>li a{
+  color: #a0a0a0;
+}
+
+.nav:hover .nav_list>li a:hover{
+  color: #FFF;
+}
+.sub_project li a:hover{
+  color: #FFF;
+}
+.sub_nav a:hover,
+.sub_nav.single li a:hover{
+  color: #FFF;
   font-weight: bold;
 }
 
-.sub_nav.single li a.current{
-  color: #000;
+.sub_nav{
+  border-top: 1px solid #2f2f2f;
 }
 
-.nav{
-  background: #FFF;
+.nav:hover .logo{
+  background: url('/resource/images/common/logo.png') no-repeat;
 }
-
-.nav ol{
-  display: none;
-}
-.nav .nav_list>li a{
-  color: #949393;
-}
-.nav .nav_list>li>ol{
-  display: block;
-}
-
-.nav .logo{
-  background: url('/resource/images/common/logo_black.png') no-repeat;
+.sub_nav.single li a.current,
+.sub_nav a.current{
+  color: #FFF;
 }
 
 .sub_title{

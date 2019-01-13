@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>都市设计</title>
+  <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=123321">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=123321">
-  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=123321">
-  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=123321">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=36543">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=36543">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=36543">
+  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=36543">
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
 </head>
 <body>
 <div id="app" v-cloak>
+
   <du-header></du-header>
   <div>
     <div class="sub_title">
@@ -22,34 +23,52 @@
         </div>
         <div class="content member_content">
             <ul class="member_list clear_fix">
-              <li>
-                <img src="/resource/images/member/1.jpg">
-                <h3>执行董事/总建筑师</h3>
-                <h4>凌克戈</h4>
-              </li>
-              <li>
-                <img src="/resource/images/member/2.jpg">
-                <h3>设计总监</h3>
-                <h4>胡威</h4>
-              </li>
-              <li>
-                <img src="/resource/images/member/3.jpg">
-                <h3>技术总监</h3>
-                <h4>王利民</h4>
-              </li>
-              <li>
-                <img src="/resource/images/member/4.jpg">
-                <h3>部门设计总监</h3>
-                <h4>刘轶佳</h4>
+              <li class="clear_fix" v-for="item in contentList" @click=showDetail(item)>
+                <img :src="'/resource/images/member/'+item.img+'.jpg'" class="left">
+                <div class="left" style="width: 50%">
+                  <h3>{{item.title}}</h3>
+                  <h4>{{item.name}}</h4>
+                  <div class="member_intro">
+                    <p v-for="content in item.content">
+                      {{content}}
+                    </p>
+                  </div>
+                </div>
               </li>
             </ul>
         </div>
     </div>
+
+    <div class="mask">
+      <div class="mask_cotent">
+        <div class="mask_message">
+          <div class="close" >
+            <i @click="closeMask" class="btn"></i>
+          </div>
+          <div class="box clear_fix">
+            <div class="mask_position">
+              <div class="mask_image">
+                <img :src="'/resource/images/member/'+mask.img+'.jpg'" class="left">
+                <p class="honour" v-if="mask.honour">{{mask.honour}}</p>
+                <p class="school" v-if="mask.school">{{mask.school}}</p>
+              </div>
+              <div class="mask_intro">
+                <span class="contentTitle">{{mask.title}}</span>
+                <span class="contentTime">{{mask.name}}</span>
+                <span class="contentMsg" v-for="item in mask.content">{{item  }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
   </div>
   <du-footer></du-footer>
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/awards.js?v=123321"></script>
+<script type="text/javascript" src="/dist/member.js?v=36543"></script>
 </body>
 </html>

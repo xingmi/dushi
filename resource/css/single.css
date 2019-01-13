@@ -78,6 +78,11 @@
   width: 50%;
   float: left;
   margin-top: 60px;
+  height: 196px;
+  overflow: hidden;
+  padding-right: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .single_project .member_content li img{
   float: left;
@@ -94,3 +99,103 @@
   font-weight: 400;
   color: #000;
 }
+.single_project .member_content .member_intro p {
+  text-indent: 24px;
+  line-height: 18px;
+}
+
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 111;
+  display: none;
+}
+
+.mask_cotent{
+  background: #FFF;
+  position: absolute;
+  // overflow: scroll;
+}
+.mask_message{
+  height: 100%;
+  position: relative;
+}
+.mask .close{
+  text-align: right;
+  line-height: 40px;
+  height: 40px;
+  padding-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFF;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+}
+.mask .close .btn{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../images/common/close.jpg') center no-repeat;
+  margin-top: 8px;
+}
+.mask_cotent .box{
+  padding: 0 40px;
+  height: 100%;
+  overflow: scroll;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.mask_cotent .mask_position{
+  position: relative;
+  padding-left: 250px;
+}
+
+.mask_cotent .mask_image {
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  // color: #000
+}
+.mask_cotent .mask_image .honour{
+
+}
+.mask_cotent .mask_image .school{
+  margin-top: 10px;
+}
+.mask_cotent .mask_image img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mask_cotent .mask_intro {
+  font-weight: 200;
+  font-size: 14px;
+}
+.mask_cotent .mask_intro span{
+  display: block;
+}
+.mask_cotent .mask_intro .contentTitle{
+  font-size: 16px;
+  color: #000;
+}
+.mask_cotent .mask_intro .contentTime {
+  font-size: 24px;
+  color: #000;
+  margin: 20px 0;
+}
+.mask_cotent .mask_intro .contentMsg{
+  margin-bottom: 15px;
+  line-height: 26px;
+  // color: #000
+}
+

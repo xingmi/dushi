@@ -150,8 +150,8 @@ body{
 .sub_project li{
   padding-top: 20px;
   // float: left;
-  width: 190px;
-  margin-right: 50px;
+  width: 250px;
+  margin-left: 10px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
@@ -163,17 +163,17 @@ body{
   text-align: left;
 }
 .sub_project li a{
-  width: 90px;
+  width: 80px;
   display: inline-block;
   margin-top: 15px;
   color: #a0a0a0;
   text-align: left;
 }
-.sub_project li a.current{
-  color: #000;
-}
+// .sub_project li a.current{
+//   color: #000;
+// }
 .sub_project li.location{
-  width: 120px;
+  width: 170px;
 }
 .sub_project li.location a{
   width: 50px;
@@ -186,15 +186,15 @@ body{
 .nav .logo{
   position: absolute;
   background: url('/resource/images/common/logo.png') no-repeat;
-  width: 45px;
-  height: 45px;
+  width: 53px;
+  height: 67px;
   display: block;
-  top: 20px;
+  top: 6px;
   left: 50px;
 }
-.nav:hover .logo{
-  background: url('/resource/images/common/logo_black.png') no-repeat;
-}
+// .nav:hover .logo{
+//   background: url('/resource/images/common/logo_black.png') no-repeat;
+// }
 .nav .nav_list{
   position: absolute;
   top: 32px;
@@ -208,7 +208,6 @@ body{
   cursor: pointer;
 }
 .nav .nav_list li a{
-  color: #a5a5a5;
   display: block;
   height: 100%;
   color: #dddddd;
@@ -281,10 +280,10 @@ body{
   color: #bdbdbd;
 }
 .common_footer h5{
-  margin-top: 25px;
+  margin-top: 15px;
   font-weight:200;
 }
 .common_footer h6{
-  margin-top: 15px;
+  margin-top: 12px;
   font-weight: 200;
 }
