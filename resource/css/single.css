@@ -99,6 +99,9 @@
   font-weight: 400;
   color: #000;
 }
+.single_project .member_content .member_intro {
+  margin-top: 19px;
+}
 .single_project .member_content .member_intro p {
   text-indent: 24px;
   line-height: 18px;
