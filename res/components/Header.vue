@@ -36,7 +36,6 @@
           </li>
           <li>
             <h4>服务</h4>
-            <a href="project.html?type=设计总协调" :class="{current: urlType == '设计总协调'}">设计总协调</a>
             <a href="project.html?type=室内" :class="{current: urlType == '室内'}" style="width: 50px;">室内</a>
             <a href="project.html?type=一体化设计" :class="{current: urlType == '一体化设计'}">一体化设计</a>
             <a href="project.html?type=规划" :class="{current: urlType == '规划'}">规划</a>
@@ -53,7 +52,7 @@
         <ol class="sub_nav single sub_nav_4">
           <li>
             <a href="awards.html?type=award" :class="{current: urlType == 'award'}">奖项</a>
-            <a href="member.html?type=member" :class="{current: urlType == 'member'}">主要成员</a>
+            <a href="member.html?type=member" :class="{current: urlType == 'member'}">核心团队</a>
             <a href="jobs.html?type=join" :class="{current: urlType == 'join'}">工作机会</a>
             <a href="contact.html?type=contact" :class="{current: urlType == 'contact'}">联系我们</a>
           </li>

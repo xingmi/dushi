@@ -42,9 +42,9 @@
 }
 .single_project .content .list li h4 {
   padding-top: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+  // white-space: nowrap;
   font-weight: 200;
   color: #0c0c0c;
 }

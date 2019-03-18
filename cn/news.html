@@ -25,7 +25,7 @@
             <img :src="'/resource/images/'+ type +'/' + (Number(index) + 1) + '/small.jpg'">
             <div class="project_intro">
               <span class="contentTitle">{{item.contentTitle}}</span>
-              <span class="contentMsg">{{item.content}}</span>
+              <span class="contentMsg" :style="{'-webkit-line-clamp': (type == 'news' ? 'inherit' : '2' )}">{{item.content}}</span>
               <span class="contentTime">{{item.contentTime}}</span>
             </div>
             
