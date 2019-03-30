@@ -3,10 +3,10 @@
 <head>
   <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=123123">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=123123">
-  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=123123">
-  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=123123">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=3424234">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=3424234">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=3424234">
+  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=3424234">
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
 </head>
 <body>
@@ -19,20 +19,22 @@
     </div>
     <div class="single_project">
         <div class="banner">
-          <img src="/resource/images/jobs/banner.jpg">
+          <img src="/resource/images/jobs/banner1.jpg">
         </div>
         <div class="content member_content">
             <ul class="member_list clear_fix">
               <li class="clear_fix" v-for="item in contentList" @click=showDetail(item)>
                 <img :src="'/resource/images/member/'+item.img+'.jpg'" class="left">
-                <div class="left" style="width: 50%">
-                  <h3>{{item.title}}</h3>
-                  <h4>{{item.name}}</h4>
-                  <div class="member_intro">
+                <div class="left" style="width: 39%">
+                  <h3>{{item.name}}</h3>
+                  <h4>{{item.title}}</h4>
+                  <h4 v-if="item.subtitle">{{item.subtitle}}</h4>
+                  <h4>{{item.honour}}</h4>
+                  <!-- <div class="member_intro">
                     <p v-for="content in item.content">
                       {{content}}
                     </p>
-                  </div>
+                  </div> -->
                 </div>
               </li>
             </ul>
@@ -49,13 +51,15 @@
             <div class="mask_position">
               <div class="mask_image">
                 <img :src="'/resource/images/member/'+mask.img+'.jpg'" class="left">
-                <p class="honour" v-if="mask.honour">{{mask.honour}}</p>
-                <p class="school" v-if="mask.school">{{mask.school}}</p>
+                <!-- <p class="honour" v-if="mask.honour">{{mask.subhonour}}</p> -->
+                <!-- <p class="school" v-if="mask.school">{{mask.school}}</p> -->
               </div>
               <div class="mask_intro">
                 <span class="contentTitle">{{mask.title}}</span>
+                <span class="contentTitle">{{mask.subtitle}}</span>
+                <span class="contentTitle" v-if="mask.subhonour">{{mask.subhonour}}</span>
                 <span class="contentTime">{{mask.name}}</span>
-                <span class="contentMsg" v-for="item in mask.content">{{item  }}</span>
+                <span class="contentMsg" v-for="item in mask.content">{{item}}</span>
               </div>
             </div>
           </div>
@@ -69,6 +73,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/member.js?v=123123"></script>
+<script type="text/javascript" src="/dist/member.js?v=3424234"></script>
 </body>
 </html>

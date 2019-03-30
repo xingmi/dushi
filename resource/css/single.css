@@ -71,14 +71,14 @@
 }
 
 .single_project .member_content{
-  padding: 0 14% 50px 14%;
+  padding: 0 4% 50px 4%;
 }
 
 .single_project .member_content li {
-  width: 50%;
+  width: 33%;
   float: left;
-  margin-top: 60px;
-  height: 196px;
+  margin-top: 30px;
+  height: 150px;
   overflow: hidden;
   padding-right: 20px;
   box-sizing: border-box;
@@ -86,18 +86,20 @@
 }
 .single_project .member_content li img{
   float: left;
-  width: 45%;
+  width: 55%;
   margin-right: 5%;
 }
 .single_project .member_content li h3 {
   margin-top: 8px;
+  margin-bottom: 10px;
   color: #000;
+  font-size: 20px;
 }
 .single_project .member_content li h4 {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 400;
+  margin-bottom: 5px;
+  font-weight: normal;
   color: #000;
+  font-size: 12px;
 }
 .single_project .member_content .member_intro {
   margin-top: 19px;
@@ -131,7 +133,7 @@
   text-align: right;
   line-height: 40px;
   height: 40px;
-  padding-right: 20px;
+  padding-right: 8px;
   font-size: 16px;
   cursor: pointer;
   position: absolute;
@@ -147,7 +149,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('../images/common/close.jpg') center no-repeat;
+  background: url('../images/common/close.png') center no-repeat;
   margin-top: 8px;
 }
 .mask_cotent .box{
@@ -190,11 +192,13 @@
 .mask_cotent .mask_intro .contentTitle{
   font-size: 16px;
   color: #000;
+  margin-bottom: 5px;
 }
 .mask_cotent .mask_intro .contentTime {
   font-size: 24px;
   color: #000;
   margin: 20px 0;
+  font-weight: 400;
 }
 .mask_cotent .mask_intro .contentMsg{
   margin-bottom: 15px;

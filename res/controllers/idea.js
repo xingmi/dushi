@@ -33,7 +33,7 @@ var app = new Vue({
     introContent: ""
   },
   created: function(){
-    this.photos = 3
+    this.photos = 4
     switch (type) {
       case 'design':
           this.title = '一体化设计'

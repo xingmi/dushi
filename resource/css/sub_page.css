@@ -4,13 +4,13 @@
 
 .nav,
 .nav:hover{
-  background: rgba(0,0,0,.5);
+  background: #fff;
 }
 .nav .nav_list>li a:hover{
   color: #FFF;
 }
 .sub_nav{
-  background: rgba(0,0,0,.5);
+  background: #fff;
 }
 .sub_project li h4{
   color: #595959;
@@ -21,26 +21,26 @@
 .nav .nav_list>li a{
   display: block;
   height: 100%;
-  color: #a0a0a0;
+  color: #808080;
 }
 .nav:hover .nav_list>li a{
   color: #a0a0a0;
 }
 
 .nav:hover .nav_list>li a:hover{
-  color: #FFF;
+  color: #000;
 }
 .sub_project li a:hover{
-  color: #FFF;
+  color: #000;
 }
 .sub_nav a:hover,
 .sub_nav.single li a:hover{
-  color: #FFF;
+  color: #000;
   font-weight: bold;
 }
 
 .sub_nav{
-  border-top: 1px solid #2f2f2f;
+  border-top: 1px solid #999;
 }
 
 .nav:hover .logo{
@@ -48,7 +48,7 @@
 }
 .sub_nav.single li a.current,
 .sub_nav a.current{
-  color: #FFF;
+  color: #000;
 }
 
 .sub_title{

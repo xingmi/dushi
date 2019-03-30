@@ -1,5 +1,8 @@
 var header = require('../components/Header.vue') 
 var footer = require('../components/Footer.vue') 
+
+var type = decodeURIComponent($.getUrlParam('type'))
+
 var app = new Vue({
   el: '#app',
   components: {
@@ -7,7 +10,7 @@ var app = new Vue({
     'duFooter' : footer
   },
   data: {
-    
+    type
   },
   created: function(){
    
