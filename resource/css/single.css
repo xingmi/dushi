@@ -89,7 +89,7 @@
   width: 55%;
   margin-right: 5%;
 }
-.single_project .member_content li h3 {
+.single_project .member_content li .name {
   margin-top: 8px;
   margin-bottom: 10px;
   color: #000;

@@ -3,10 +3,10 @@
 <head>
   <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=3424234">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=3424234">
-  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=3424234">
-  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=3424234">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=1123">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=1123">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=1123">
+  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=1123">
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
               <li class="clear_fix" v-for="item in contentList" @click=showDetail(item)>
                 <img :src="'/resource/images/member/'+item.img+'.jpg'" class="left">
                 <div class="left" style="width: 39%">
-                  <h3>{{item.name}}</h3>
+                  <div class="name">{{item.name}}</div>
                   <h4>{{item.title}}</h4>
                   <h4 v-if="item.subtitle">{{item.subtitle}}</h4>
                   <h4>{{item.honour}}</h4>
@@ -59,7 +59,11 @@
                 <span class="contentTitle">{{mask.subtitle}}</span>
                 <span class="contentTitle" v-if="mask.subhonour">{{mask.subhonour}}</span>
                 <span class="contentTime">{{mask.name}}</span>
-                <span class="contentMsg" v-for="item in mask.content">{{item}}</span>
+                <span class="contentMsg" v-for="(item, index) in mask.content">
+                  <p v-if="index == 0">个人荣誉</p>
+                  <p v-else="index == 0">个人代表作品</p>
+                  {{item}}
+                </span>
               </div>
             </div>
           </div>
@@ -73,6 +77,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/member.js?v=3424234"></script>
+<script type="text/javascript" src="/dist/member.js?v=1123"></script>
 </body>
 </html>
