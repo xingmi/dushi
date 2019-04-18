@@ -112,7 +112,7 @@ var projectData = {
   },
   "007": {
     "id": '007',
-    "name": "江阴嘉荷精品酒店改造",
+    "name": "江阴嘉荷精品酒店",
     "photos": 5,
     "design": 4,
     "address": "江苏江阴",
@@ -379,7 +379,7 @@ var projectData = {
   },
   "102": {
     "id": '102',
-    "name": "杭州星耀城（购物中心）",
+    "name": "杭州星耀城",
     "photos": 3,
     "design": 5,
     "address": "浙江杭州",
@@ -396,7 +396,7 @@ var projectData = {
   },
   "103": {
     "id": '103',
-    "name": "合肥太平洋森活城（购物中心）",
+    "name": "合肥太平洋森活城",
     "photos": 3,
     "design": 3,
     "address": "上海",
@@ -413,7 +413,7 @@ var projectData = {
   },
   "104": {
     "id": '104',
-    "name": "成都新城市广场改造（购物中心）",
+    "name": "成都新城市广场改造",
     "photos": 1,
     "design": 3,
     "address": "四川成都",
@@ -481,7 +481,7 @@ var projectData = {
   },
   "108": {
     "id": '108',
-    "name": "南京升龙公园道社区商业（商业街）",
+    "name": "南京升龙公园道社区商业",
     "photos": 3,
     "design": 3,
     "address": "江苏南京",
@@ -634,7 +634,7 @@ var projectData = {
   },
   "117": {
     "id": '117',
-    "name": "绿地长岛上海论坛",
+    "name": "绿地长岛艾美酒店",
     "photos": 3,
     "design": 1,
     "address": "启东",
@@ -1126,7 +1126,7 @@ var projectData = {
   
   "149": {
     "id": '149',
-    "name": "武汉驿山高尔夫住宅区A地块",
+    "name": "武汉驿山高尔夫A地块住宅",
     "photos": 1,
     "design": 5,
     "address": "武汉",
@@ -1144,7 +1144,7 @@ var projectData = {
   
   "150": {
     "id": '150',
-    "name": "武汉驿山高尔夫住宅区G地块",
+    "name": "武汉驿山高尔夫G地块住宅",
     "photos": 2,
     "design": 1,
     "address": "武汉",
@@ -1281,7 +1281,7 @@ var projectData = {
   },
   "160": {
     "id": '160',
-    "name": "襄阳中建状元府A地块",
+    "name": "襄阳中建状元府A地块建筑设计",
     "photos": 2,
     "design": 5,
     "address": "湖北襄阳",
