@@ -3,10 +3,10 @@
 <head>
   <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=121212">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=121212">
-  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=121212">
-  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=121212">
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=55555">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=55555">
+  <link rel="stylesheet" type="text/css" href="/resource/css/sub_page.css?v=55555">
+  <link rel="stylesheet" type="text/css" href="/resource/css/single.css?v=55555">
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
                 <div class="left" style="width: 39%">
                   <div class="name">{{item.name}}</div>
                   <h4>{{item.title}}</h4>
-                  <h4 v-if="item.subtitle">{{item.subtitle}}</h4>
+                  <h4 v-if="item.subtitle">{{item.subtitle}}</>
                   <h4>{{item.honour}}</h4>
                   <!-- <div class="member_intro">
                     <p v-for="content in item.content">
@@ -47,7 +47,7 @@
           <div class="close" >
             <i @click="closeMask" class="btn"></i>
           </div>
-          <div class="box clear_fix">
+          <div class="box clear_fix">1
             <div class="mask_position">
               <div class="mask_image">
                 <img :src="'/resource/images/member/'+mask.img+'.jpg'" class="left">
@@ -62,7 +62,7 @@
                 <span class="contentMsg" v-for="(item, index) in mask.content">
                   <p v-if="index == 0" style="color: #000">个人荣誉</p>
                   <p v-else="index == 0" style="color: #000">个人代表作品</p>
-                  <span style="font-size: 12px;">{{item}}</span>
+                  <span style="font-size: 12px;=">{{item}}</span>
                 </span>
               </div>
             </div>
@@ -77,6 +77,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/member.js?v=121212"></script>
+<script type="text/javascript" src="/dist/member.js?v=55555"></script>
 </body>
 </html>
