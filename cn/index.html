@@ -3,10 +3,10 @@
 <head>
   <title>都设设计</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=55555">
-  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=55555">
-  <link rel="stylesheet" type="text/css" href="/resource/css/index.css?v=55555">
-  <script type="text/javascript" src="/resource/data/data.js?v=55555"></script>
+  <link rel="stylesheet" type="text/css" href="/resource/css/base.css?v=1231312">
+  <link rel="stylesheet" type="text/css" href="/resource/css/home_swiper.css?v=1231312">
+  <link rel="stylesheet" type="text/css" href="/resource/css/index.css?v=1231312">
+  <script type="text/javascript" src="/resource/data/data.js?v=1231312"></script>
   <script type="text/javascript" src="/res/lib/jquery_1_7_2.js"></script>
   <script type="text/javascript" src="/res/lib/home_swiper.min.js"></script>
 </head>
@@ -16,7 +16,7 @@
 <div class="home_slider">
    <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(item,index) in projectItems"><a :href="'item.html?projectId=' + item.id"><img :src="'/resource/images/index/' + (index + 1) +'.jpg'"></a></div>
+        <div class="swiper-slide" v-for="(item,index) in projectItems"><a :href="'/cn/item.html?projectId=' + item.id"><img :src="'/resource/images/index/' + (index + 1) +'.jpg'"></a></div>
     </div>
   </div>
   <div class="swiper-button-prev swiper_btn" id="designSwiperPrev"></div>
@@ -34,6 +34,6 @@
 </div>
 
 <script src="/res/lib/vue.js"></script>
-<script type="text/javascript" src="/dist/index.js?v=55555"></script>
+<script type="text/javascript" src="/dist/index.js?v=1231312"></script>
 </body>
 </html>
