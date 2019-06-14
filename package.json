@@ -17,6 +17,8 @@
     "url": "https://github.com/xingmi/changtian/issues"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.0.0",
     "vue": "^2.3.0",
     "vue-pickers": "^1.0.3"
   },
