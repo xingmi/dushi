@@ -2,7 +2,7 @@ var projectData = {
   "001": {
     "id": '001',
     "name": "武汉西北湖双玺办公",
-    "photos": 5,
+    "photos": 10,
     "design": 5,
     "address": "武汉",
     "endTime": "2015",
@@ -40,7 +40,7 @@ var projectData = {
   "003": {
     "id": '003',
     "name": "扬州虹桥坊",
-    "photos": 5,
+    "photos": 10,
     "design": 4,
     "address": "江苏扬州",
     "endTime": "2013",
@@ -59,7 +59,7 @@ var projectData = {
   "004": {
     "id": '004',
     "name": "姑苏雅集",
-    "photos": 5,
+    "photos": 10,
     "design": 3,
     "address": "江苏苏州",
     "endTime": "2017",
@@ -113,7 +113,7 @@ var projectData = {
   "007": {
     "id": '007',
     "name": "江阴嘉荷精品酒店",
-    "photos": 5,
+    "photos": 9,
     "design": 4,
     "address": "江苏江阴",
     "endTime": "2013",
@@ -167,7 +167,7 @@ var projectData = {
   "011": {
     "id": '011',
     "name": "南京白云亭文化艺术中心",
-    "photos": 5,
+    "photos": 10,
     "design": 5,
     "address": "江苏南京",
     "endTime": "2014",
@@ -263,7 +263,7 @@ var projectData = {
   "017": {
     "id": '017',
     "name": "武汉金禾时尚广场",
-    "photos": 5,
+    "photos": 10,
     "design": 4,
     "address": "武汉",
     "startTime": "2015",
@@ -296,7 +296,7 @@ var projectData = {
   "019": {
     "id": '019',
     "name": "成都协信希尔顿酒店",
-    "photos": 5,
+    "photos": 10,
     "design": 5,
     "address": "四川成都",
     "startTime": "2011-2012",
@@ -1590,7 +1590,7 @@ var projectData = {
   "180": {
     "id": '180',
     "name": "武汉西北湖B地块超高层办公",
-    "photos": 4,
+    "photos": 8,
     "design": 5,
     "address": "武汉",
     "startTime": "2017",

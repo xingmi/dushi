@@ -57,9 +57,9 @@
   z-index: 1;
   position: absolute;
   bottom: 40px;
-  width: 132px;
+  width: 220px;
   left: 50%;
-  margin-left: -66px;
+  margin-left: -110px;
   z-index: 100;
 }
 .project_slider .pagination span{
