@@ -36,11 +36,11 @@ var contentList = {
   'articles': {
     title: '出版物/文章',
     list: [
-      {
-        contentTitle: '书-《HILTON WUHAN OPTICS VALLEY——The Story of Landmark Resort》',
-        content: 'Built to the standard specifications of Hilton’s flagship resort, Hilton Wuhan Optics Valley is the biggest, the most multi-functional, state-of-the-art hotel for state guests. It is the business and convention center for the Donghu High-tech Zone, as well as a prime hub for political and business activities.',
-        contentTime: '2018/10'
-      },
+      // {
+      //   contentTitle: '书-《HILTON WUHAN OPTICS VALLEY——The Story of Landmark Resort》',
+      //   content: 'Built to the standard specifications of Hilton’s flagship resort, Hilton Wuhan Optics Valley is the biggest, the most multi-functional, state-of-the-art hotel for state guests. It is the business and convention center for the Donghu High-tech Zone, as well as a prime hub for political and business activities.',
+      //   contentTime: '2018/10'
+      // },
       {
         contentTitle: '从此无论开车还是高铁，到达南京都将看到“都设设计”',
         content: '都设原创设计的“南京高力力新庄广场”年底将完成地下室施工，2020年，一个10万平米的“六角广场”将展现在南京玄武湖边。南京高力新庄广场位于新庄立交，靠近南京站，占据了南京进出的门户位置，加上都设在南京南站北侧设计的万科九都荟写字楼以及尚都荟公寓，未来进出南京都将看到都设的设计作品。',
